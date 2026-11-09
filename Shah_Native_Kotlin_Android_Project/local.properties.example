@@ -1,9 +1,0 @@
-# Copy this file to local.properties for local Android Studio release signing.
-# Never commit local.properties to version control!
-KEYSTORE_FILE=release.keystore
-KEY_ALIAS=ethioculturalsports
-KEY_PASSWORD=ethioculturalsports
-STORE_PASSWORD=ethioculturalsports
-
-# Optional future AdMob App ID (Leave blank until you want to enable AdMob in future releases)
-ADMOB_APP_ID=
