@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shah_bg_dark">#090B14</color>
+    <color name="shah_royal_blue">#1676B8</color>
+    <color name="shah_board_green">#17B84B</color>
+    <color name="shah_board_yellow">#FFEA00</color>
+    <color name="shah_board_red">#EF1A2D</color>
+    <color name="shah_gold">#FCA311</color>
+    <color name="shah_crimson">#E94560</color>
+    <color name="shah_emerald">#10B981</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
