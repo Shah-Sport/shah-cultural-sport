@@ -34,9 +34,8 @@ jobs:
             echo "settings.gradle.kts not found at root. Searching for uploaded .zip archive..."
             ZIP_FILE=$(find . -maxdepth 2 -name "*.zip" | head -n 1)
             if [ -n "$ZIP_FILE" ]; then
-              echo "Found archive: $ZIP_FILE Рђћ extracting project files..."
+              echo "Found archive: $ZIP_FILE — extracting project files..."
               unzip -o "$ZIP_FILE" -d .
-              # If the zip extracted into a subfolder, move contents to root
               if [ ! -f "settings.gradle.kts" ]; then
                 SUB_SETTINGS=$(find . -maxdepth 3 -name "settings.gradle.kts" | head -n 1)
                 if [ -n "$SUB_SETTINGS" ]; then
@@ -44,7 +43,6 @@ jobs:
                   cp -rn "$SUB_DIR"/. .
                 fi
               fi
-              # Commit extracted files back to the repository so GitHub Pages (/docs) and code tree work natively
               git config user.name "github-actions[bot]"
               git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
               git add .
@@ -136,9 +134,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0.0-build.${{ github.run_number }}
-          name: "рѕ╗рѕЁ (Shah Cultural Sport Game) v1.0.0 Рђћ Build #${{ github.run_number }}"
+          name: "ሻህ (Shah Cultural Sport Game) v1.0.0 — Build #${{ github.run_number }}"
           body: |
-            ### ­ЪЈє рІерѕ╗рѕЁ рЅБрѕЁрѕІрІі рѕхрЇќрѕГрЅх рїерІІрЅ│ (100% Native Kotlin Release)
+            ### 🏆 የሻህ ባህላዊ ስፖርት ጨዋታ (100% Native Kotlin Release)
             - **Google Play Console Bundle (`.aab`)**: `Shah-v1.0.0-PlayStore-Release.aab`
             - **Direct Phone Installer (`.apk`)**: `Shah-v1.0.0-Phone-Install.apk`
             - **Package ID**: `eth.culturalsports.shah` (Version 1.0.0 / Code 1)
