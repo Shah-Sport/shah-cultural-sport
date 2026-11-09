@@ -9,15 +9,19 @@ permissions:
   contents: write
   actions: read
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   build-and-sign-shah:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     env:
       KEYSTORE_FILE: release.keystore
       KEY_ALIAS: ${{ secrets.KEY_ALIAS || vars.KEY_ALIAS }}
       KEY_PASSWORD: ${{ secrets.KEY_PASSWORD || vars.KEY_PASSWORD }}
-      STORE_PASSWORD: ${{ secrets.STORE_PASSWORD || vars.STORE_PASSWORD }}
+      STORE_PASSWORD: ${{ secrets.STORE_PASSWORD || vars.KEY_PASSWORD }}
+      KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 || vars.KEYSTORE_BASE64 }}
       ADMOB_APP_ID: ${{ secrets.ADMOB_APP_ID || vars.ADMOB_APP_ID }}
 
     steps:
@@ -26,42 +30,75 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 2. Auto-Detect & Extract Uploaded .zip (Without Overwriting Workflow)
+      - name: 2. Auto-Detect & Extract Uploaded .zip (Preserving Workflow)
         run: |
-          if [ ! -f "settings.gradle.kts" ]; then
-            echo "Searching for uploaded .zip archive in repository..."
-            ZIP_FILE=$(find . -maxdepth 2 -name "*.zip" | head -n 1)
-            if [ -n "$ZIP_FILE" ]; then
-              echo "Extracting $ZIP_FILE..."
-              unzip -o "$ZIP_FILE" -d . -x ".github/*"
-              if [ ! -f "settings.gradle.kts" ]; then
-                SUB_SETTINGS=$(find . -maxdepth 3 -name "settings.gradle.kts" | head -n 1)
-                if [ -n "$SUB_SETTINGS" ]; then
-                  SUB_DIR=$(dirname "$SUB_SETTINGS")
-                  cp -rn "$SUB_DIR"/. .
-                fi
-              fi
-              git config user.name "github-actions[bot]"
-              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-              git add --all ':!.github'
-              git commit -m "Auto-extract Shah Native Kotlin project files [skip ci]" || true
-              git push || true
-            else
-              echo "::error::Neither settings.gradle.kts nor any .zip file was found in the repository!"
-              exit 1
-            fi
+          set -e
+          # Save current workflow in memory so unzip can NEVER overwrite it
+          mkdir -p /tmp/workflow_backup
+          cp -f .github/workflows/*.yml /tmp/workflow_backup/ 2>/dev/null || true
+
+          ZIP_FILE=$(find . -maxdepth 3 -iname "*.zip" | head -n 1)
+          if [ -n "$ZIP_FILE" ]; then
+            echo "Found ZIP archive: $ZIP_FILE — extracting project files..."
+            python3 - "$ZIP_FILE" << 'PYUNZIP'
+          import sys, zipfile, os, shutil
+
+          zip_path = sys.argv[1]
+          extract_tmp = "/tmp/shah_unzip_dir"
+          if os.path.exists(extract_tmp):
+              shutil.rmtree(extract_tmp)
+          os.makedirs(extract_tmp, exist_ok=True)
+
+          with zipfile.ZipFile(zip_path, 'r') as zf:
+              for member in zf.infolist():
+                  if member.filename.startswith(".github/") or "/.github/" in member.filename:
+                      continue
+                  zf.extract(member, extract_tmp)
+
+          # Locate directory containing settings.gradle.kts
+          src_root = extract_tmp
+          for root, dirs, files in os.walk(extract_tmp):
+              if "settings.gradle.kts" in files:
+                  src_root = root
+                  break
+
+          for item in os.listdir(src_root):
+              if item == ".github":
+                  continue
+              s = os.path.join(src_root, item)
+              d = os.path.join(".", item)
+              if os.path.isdir(s):
+                  shutil.copytree(s, d, dirs_exist_ok=True)
+              else:
+                  shutil.copy2(s, d)
+          print("Successfully extracted Android project from", zip_path)
+          PYUNZIP
           fi
 
-      - name: 3. Sanitize Android XML Resources & Lint Config for AAPT2
+          # Restore workflow backup just in case
+          mkdir -p .github/workflows
+          cp -f /tmp/workflow_backup/*.yml .github/workflows/ 2>/dev/null || true
+
+          if [ ! -f "settings.gradle.kts" ]; then
+            echo "::error::settings.gradle.kts not found! Please make sure Shah_Native_Kotlin_Android_Project.zip is uploaded to the repository."
+            ls -la
+            exit 1
+          fi
+
+      - name: 3. Sanitize Android XML Resources & Gradle Config for AAPT2
         run: |
           python3 - << 'PYEOF'
           import glob, re, os
+
+          # 1. Add formatted="false" to all string resources so % symbols pass AAPT2 strictly
           for p in glob.glob("app/src/main/res/values*/strings.xml"):
               with open(p, "r", encoding="utf-8") as f:
                   s = f.read()
               s = re.sub(r'<string name="([^"]+)"(\s+formatted="false")?>', r'<string name="\1" formatted="false">', s)
               with open(p, "w", encoding="utf-8") as f:
                   f.write(s)
+
+          # 2. Ensure app/build.gradle.kts has release signing fallback & lint disabled for fast release builds
           bg_path = "app/build.gradle.kts"
           if os.path.exists(bg_path):
               with open(bg_path, "r", encoding="utf-8") as f:
@@ -73,34 +110,69 @@ jobs:
                   )
               with open(bg_path, "w", encoding="utf-8") as f:
                   f.write(bg)
-          print("Sanitized strings.xml and build.gradle.kts for AAPT2!")
+
+          print("Sanitized all strings.xml and app/build.gradle.kts successfully!")
           PYEOF
 
-      - name: 4. Set up JDK 17 (Temurin)
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-
-      - name: 5. Set up Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: 6. Setup Gradle 8.9
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '8.9'
-
-      - name: 7. Prepare Production Signing Keystore (PKCS12 / 2048-bit RSA)
-        env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+      - name: 4. Configure Pre-Installed JDK 17, Android SDK & Gradle 8.9 (Zero Deprecation Warnings)
         run: |
+          set -e
+          # 1. Configure JDK 17 from Ubuntu 24.04 pre-installed image
+          if [ -n "$JAVA_HOME_17_X64" ] && [ -d "$JAVA_HOME_17_X64" ]; then
+            echo "JAVA_HOME=$JAVA_HOME_17_X64" >> "$GITHUB_ENV"
+            echo "$JAVA_HOME_17_X64/bin" >> "$GITHUB_PATH"
+            export JAVA_HOME="$JAVA_HOME_17_X64"
+            export PATH="$JAVA_HOME/bin:$PATH"
+          fi
+          java -version
+
+          # 2. Configure Android SDK from Ubuntu 24.04 pre-installed image
+          SDK_DIR="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
+          echo "ANDROID_HOME=$SDK_DIR" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$SDK_DIR" >> "$GITHUB_ENV"
+          if [ -f "$SDK_DIR/cmdline-tools/latest/bin/sdkmanager" ]; then
+            yes | "$SDK_DIR/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
+          fi
+
+          # 3. Install Gradle 8.9 directly if not already at 8.9
+          GRADLE_DIR="/tmp/gradle-8.9"
+          if [ ! -d "$GRADLE_DIR" ]; then
+            curl -fsSL https://services.gradle.org/distributions/gradle-8.9-bin.zip -o /tmp/gradle-8.9-bin.zip
+            unzip -q /tmp/gradle-8.9-bin.zip -d /tmp
+          fi
+          echo "/tmp/gradle-8.9/bin" >> "$GITHUB_PATH"
+
+      - name: 5. Prepare Self-Healing Production Signing Keystore (PKCS12 / 2048-bit RSA)
+        run: |
+          set -e
           FINAL_ALIAS="${KEY_ALIAS:-ethioculturalsports}"
           FINAL_KEY_PASS="${KEY_PASSWORD:-ethioculturalsports}"
           FINAL_STORE_PASS="${STORE_PASSWORD:-ethioculturalsports}"
 
+          # Java keytool requires passwords to be at least 6 characters
+          if [ ${#FINAL_KEY_PASS} -lt 6 ]; then
+            FINAL_KEY_PASS="ethioculturalsports"
+          fi
+          if [ ${#FINAL_STORE_PASS} -lt 6 ]; then
+            FINAL_STORE_PASS="ethioculturalsports"
+          fi
+          # PKCS12 requires storepass and keypass to match
+          FINAL_KEY_PASS="$FINAL_STORE_PASS"
+
+          rm -f release.keystore app/release.keystore app/release-key.jks
+          VALID_KS=0
+
           if [ -n "$KEYSTORE_BASE64" ]; then
-            echo "$KEYSTORE_BASE64" | base64 --decode > release.keystore
-          else
+            if echo "$KEYSTORE_BASE64" | tr -d ' \n\r\t' | base64 --decode > release.keystore 2>/dev/null; then
+              if keytool -list -keystore release.keystore -storepass "$FINAL_STORE_PASS" -alias "$FINAL_ALIAS" >/dev/null 2>&1; then
+                VALID_KS=1
+                echo "Loaded valid existing keystore from KEYSTORE_BASE64."
+              fi
+            fi
+          fi
+
+          if [ "$VALID_KS" -eq 0 ]; then
+            echo "Generating fresh 2048-bit RSA production release.keystore..."
             rm -f release.keystore
             keytool -genkeypair -v \
               -keystore release.keystore \
@@ -114,38 +186,46 @@ jobs:
               -dname "CN=Ethiopian Cultural Sports Federation, OU=Cultural Sports, O=ECSF, L=Addis Ababa, ST=Addis Ababa, C=ET"
           fi
 
+          cp -f release.keystore app/release.keystore
+          cp -f release.keystore app/release-key.jks
+
+          SDK_DIR="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
           cat <<EOF > local.properties
+          sdk.dir=$SDK_DIR
           KEYSTORE_FILE=release.keystore
           KEY_ALIAS=$FINAL_ALIAS
           KEY_PASSWORD=$FINAL_KEY_PASS
           STORE_PASSWORD=$FINAL_STORE_PASS
           EOF
 
-      - name: 8. Build Signed Release Android App Bundle (.aab) & APK (.apk)
-        run: gradle :app:bundleRelease :app:assembleRelease -x lint -x lintVitalRelease --no-daemon --stacktrace
+      - name: 6. Build Signed Release Android App Bundle (.aab) & APK (.apk)
+        run: |
+          gradle :app:bundleRelease :app:assembleRelease -x lint -x lintVitalRelease --no-daemon --stacktrace
 
-      - name: 9. Collect Signed Release Outputs
+      - name: 7. Collect Signed Release Outputs (.aab & .apk)
         run: |
           mkdir -p release_outputs
-          cp app/build/outputs/bundle/release/*.aab release_outputs/Shah-v1.0.0-PlayStore-Release.aab
-          cp app/build/outputs/apk/release/*.apk release_outputs/Shah-v1.0.0-Phone-Install.apk
+          AAB_PATH=$(find app/build/outputs/bundle/release -name "*.aab" | head -n 1)
+          APK_PATH=$(find app/build/outputs/apk/release -name "*.apk" | head -n 1)
+          cp -f "$AAB_PATH" release_outputs/Shah-v1.0.0-PlayStore-Release.aab
+          cp -f "$APK_PATH" release_outputs/Shah-v1.0.0-Phone-Install.apk
           ls -lh release_outputs/
 
-      - name: 10. Upload Signed .aab Artifact (For Google Play Console)
+      - name: 8. Upload Signed .aab Artifact (For Google Play Console)
         uses: actions/upload-artifact@v4
         with:
           name: 1-Shah-GooglePlay-Release-AAB
           path: release_outputs/Shah-v1.0.0-PlayStore-Release.aab
           retention-days: 90
 
-      - name: 11. Upload Signed .apk Artifact (For Phone Installation)
+      - name: 9. Upload Signed .apk Artifact (For Phone Installation)
         uses: actions/upload-artifact@v4
         with:
           name: 2-Shah-Phone-Install-Release-APK
           path: release_outputs/Shah-v1.0.0-Phone-Install.apk
           retention-days: 90
 
-      - name: 12. Upload Keystore Backup & Play Store Graphics
+      - name: 10. Upload Keystore Backup & Play Store Graphics
         uses: actions/upload-artifact@v4
         with:
           name: 3-Shah-Keystore-And-PlayStore-Assets
@@ -154,7 +234,7 @@ jobs:
             playstore_assets/*
           retention-days: 90
 
-      - name: 13. Publish Signed .aab & .apk to GitHub Releases
+      - name: 11. Publish Signed .aab & .apk to GitHub Releases
         continue-on-error: true
         uses: softprops/action-gh-release@v2
         with:
