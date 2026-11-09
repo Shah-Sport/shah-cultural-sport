@@ -999,9 +999,7 @@ class ShahViewModel(application: Application) : AndroidViewModel(application) {
         repository.saveSettings(updatedSettings)
 
         var modalTitle = tr(R.string.shah_round_complete_title, mapOf("round" to st.matchRound.toString()))
-        var fullMsg = reasonText + "
-
-" + tr(
+        var fullMsg = reasonText + "\n\n" + tr(
             R.string.shah_match_score_summary,
             mapOf(
                 "p1" to getPlayerTitle(Player.P1, st.mode),
@@ -1019,9 +1017,7 @@ class ShahViewModel(application: Application) : AndroidViewModel(application) {
 
         if (winnerScore >= 4 || st.matchRound >= 3) {
             modalTitle = tr(R.string.shah_champ_title, mapOf("champ" to getPlayerTitle(winner, st.mode)))
-            fullMsg += "
-
-" + tr(R.string.shah_champ_msg)
+            fullMsg += "\n\n" + tr(R.string.shah_champ_msg)
             primaryBtnText = tr(R.string.shah_btn_new_match)
             nextRound = 1
             resetP1 = 0
@@ -1221,9 +1217,7 @@ class ShahViewModel(application: Application) : AndroidViewModel(application) {
         playSound("win")
         _winnerModal.value = WinnerModalData(
             title = tr(R.string.shah_cert_title),
-            message = tr(R.string.shah_cert_score_line, mapOf("sc" to sc.toString(), "pct" to pct.toString())) + "
-
-" + rankMsg,
+            message = tr(R.string.shah_cert_score_line, mapOf("sc" to sc.toString(), "pct" to pct.toString())) + "\n\n" + rankMsg,
             primaryButtonText = tr(R.string.shah_btn_retry_quiz),
             isQuizCertificate = true
         )
@@ -1232,9 +1226,7 @@ class ShahViewModel(application: Application) : AndroidViewModel(application) {
     // Native Intents: Share App, Direct Problem/Issue Email to Federation, & Social Media Links
     fun shareApplication(context: Context) {
         try {
-            val shareText = tr(R.string.shah_share_app_message) +
-                "
-https://play.google.com/store/apps/details?id=${context.packageName}"
+            val shareText = tr(R.string.shah_share_app_message) + "\nhttps://play.google.com/store/apps/details?id=${context.packageName}"
             val sendIntent = Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
                 putExtra(Intent.EXTRA_SUBJECT, tr(R.string.app_name))
@@ -1263,11 +1255,7 @@ https://play.google.com/store/apps/details?id=${context.packageName}"
             } else {
                 "ሻህ (Shah App v1.0.0) - $subjectInput"
             }
-            val deviceFooter = "
-
----
-App: ሻህ (eth.culturalsports.shah v1.0.0)
-Device: ${Build.MANUFACTURER} ${Build.MODEL} (Android ${Build.VERSION.RELEASE})"
+            val deviceFooter = "\n\n---\nApp: ሻህ (eth.culturalsports.shah v1.0.0)\nDevice: ${Build.MANUFACTURER} ${Build.MODEL} (Android ${Build.VERSION.RELEASE})"
             val mailUri = Uri.parse(
                 "mailto:$recipient?subject=" + Uri.encode(finalSubject) +
                     "&body=" + Uri.encode(bodyInput.trim() + deviceFooter)

@@ -1,440 +1,440 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ሻህ</string>
-    <string name="fed_email">eth.culturalsportsfed.1977@gmail.com</string>
-    <string name="fed_telegram_handle">@EthiopianculturalsportFDE</string>
-    <string name="fed_telegram_url">https://t.me/EthiopianculturalsportFDE</string>
-    <string name="fed_facebook_handle">@ECSF</string>
-    <string name="fed_facebook_url">https://www.facebook.com/profile.php?id=61558619311072</string>
-    <string name="shah_about_intro">Ispoortiiwwan aadaa keenya guutummaa biyyattii keessatti qorachuuf, eeguuf, babal\'isuuf, beeksisuuf, misoomsuuf akkasumas hoogganuuf Ministeera Aadaa fi Ispoortii FDRI irraa hayyamni kennameefii bara 1970 A.L.I kan hundeeffame dhaabbata angafaa dha.</string>
-    <string name="shah_about_sub">የኢትዮጵያ ባህል ስፖርቶች ፌዴሬሽን</string>
-    <string name="shah_address_desc">📍 Istaadiyeemii Finfinnee Hospitaala Beetazaataa cinaa Gamoo OBS Darbii 4ffaa Biiroo Lakk. 406</string>
-    <string name="shah_address_title">Teessoo</string>
-    <string name="shah_ai_level_label">Sadarkaa Yaaduu Siistamaa:</string>
-    <string name="shah_ai_thinking">Yaadaa jira...</string>
-    <string name="shah_auto_reason_double">Tarree 3 Kallattii Lamaa</string>
-    <string name="shah_auto_reason_shuttle">Tarree 3 Deddeebi\'aa (Buufata {a} ↔ Buufata {b} gidduu deddeebi\'uun)</string>
-    <string name="shah_back_title">Deebi\'i</string>
-    <string name="shah_banner_forced_unblock1">⚠️ Seera 4.20: Karaan {active} cufameera! {blocker} cirracha 1 kaasuun karaa haa banu (Baniinsa 1ffaa)</string>
-    <string name="shah_banner_initial_remove1">📌 Seera 4.9: {player}, cirracha morkataa 1ffaa kaasaa</string>
-    <string name="shah_banner_initial_remove2">📌 Seera 4.9: Amma {player}, cirracha morkataa 1 kaasaa</string>
-    <string name="shah_banner_mill_eat">🎯 Tarree 3 (Shaah)! {player}, cirracha morkataa 1 nyaadhaa</string>
-    <string name="shah_banner_normal_turn">🎮 Dabaree {player} — Cirracha dhiibaa</string>
-    <string name="shah_banner_path_opened">✅ Karaan banameera! {opp} haa taphatu</string>
-    <string name="shah_banner_paused">⏸️ Taphichi Yeroof Dhaabbateera — Itti fufuuf «Itti Fufi» cuqaasaa</string>
-    <string name="shah_banner_place_start">📍 Adeemsa Qubachiisuu: {player}, cirracha jalqabaa kaa\'aa</string>
-    <string name="shah_banner_place_turn">📍 Dabaree Qubachiisuu: {player}, cirracha kaa\'aa</string>
-    <string name="shah_banner_ready">🎮 Tapha jalqabuuf qophii dha</string>
-    <string name="shah_banner_still_blocked2">⚠️ Ammas karaan {opp} cufaadha! {player} yeroo 2ffaaf cirracha 1 kaasaa!</string>
-    <string name="shah_banner_timeout_foul">⚠️ Balleessaa Yeroo ({fouls}/5)! {player}, sekondii 30 keessatti taphadhaa</string>
-    <string name="shah_banner_yellow_card">🟨 Kaardii Keelloo {player}f (Balleessaa 4/5)! Ammas dabaree keessan — sekondii 30 keessatti taphadhaa</string>
-    <string name="shah_brand_title">Ispoortii Shaah</string>
-    <string name="shah_btn_exit_home">🏠 Bahiinsa</string>
-    <string name="shah_btn_go_home">🏠 Gara Fuula Duraatti</string>
-    <string name="shah_btn_go_quiz">🎓 Gara Qormaata Gaaffilee 20tti Darbi</string>
-    <string name="shah_btn_modal_home">🏠 Fuula Duraa</string>
-    <string name="shah_btn_new_match">🔄 Dorgommii Haaraa</string>
-    <string name="shah_btn_new_round">🔄 Marsaa Haaraa</string>
-    <string name="shah_btn_next_round">▶️ Marsaa Itti Aanu (Marsaa {round})</string>
-    <string name="shah_btn_pause">⏸️ Dhaabi</string>
-    <string name="shah_btn_play">▶️ Itti Fufi</string>
-    <string name="shah_btn_play_again">🔄 Irra Deebi\'ii Taphadhu</string>
-    <string name="shah_btn_redo">↪️ Irra Deebi\'i</string>
-    <string name="shah_btn_retry_quiz">🔄 Irra Deebi\'ii Yaali</string>
-    <string name="shah_btn_start_ai">💻 Siistamni Haa Jalqabu</string>
-    <string name="shah_btn_start_p1">👤 Dorgomaa 1 Haa Jalqabu</string>
-    <string name="shah_btn_start_p2">👥 Dorgomaa 2 Haa Jalqabu</string>
-    <string name="shah_btn_start_random">🎲 Carraadhaan Haa Adda Bahu</string>
-    <string name="shah_btn_undo">↩️ Deebisi</string>
-    <string name="shah_btn_view_board">👁️ Boordii Ilaali</string>
-    <string name="shah_card1_badge">Siistama Waliin</string>
-    <string name="shah_card1_desc">Sadarkaa yaaduu Salphaa, Giddu-galeessa, Ulfaataa fi Maastar (Master) tiin siistama waliin dorgomaa.</string>
-    <string name="shah_card1_title">Siistama Waliin Taphadhaa</string>
-    <string name="shah_card2_badge">Dorgomtoota 2</string>
-    <string name="shah_card2_desc">Hiriyaa keessan waliin fuulaa fuulatti bilbila tokko irratti ramaddii taphaa 3n falmadhaa.</string>
-    <string name="shah_card2_title">Dorgomtoota Lama (1 fi 1)</string>
-    <string name="shah_card3_badge">Seeraa fi Dambii</string>
-    <string name="shah_card3_desc">Seerota dorgommii ispoortii Shaah, safara boordii fi cirrachaa (40×40 cm) fi sirna taphaa.</string>
-    <string name="shah_card3_title">Seera Guutuu + Qophii Boordii</string>
-    <string name="shah_card4_badge">Gaaffilee Madaallii</string>
-    <string name="shah_card4_desc">Seeraa fi dambii ispoortii Shaah irratti hundaa\'uun gaaffilee filannoo 20 hojjechuun beekumsa keessan madaalaa.</string>
-    <string name="shah_card4_title">Qormaata Beekumsaa (Gaaffilee 20)</string>
-    <string name="shah_cert_rank_high">🌟 Baay\'ee Ol\'aanaa! Seeraa fi dambii ispoortii Shaah sirriitti beektaniittu.</string>
-    <string name="shah_cert_rank_low">📖 Yaalii Gaarii! Kutaa seeraa fi dambii Shaah irra deebi\'aa dubbisaatii qormaaticha yaalaa.</string>
-    <string name="shah_cert_rank_mid">👏 Baay\'ee Gaarii! Seera tapha ispoortii Shaah gaarii hubattaniittu.</string>
-    <string name="shah_cert_score_line">Bu\'aa Argattan: {sc} / 20 ({pct}%)</string>
-    <string name="shah_cert_title">Waraqaa Ragaa Beekumsa Ispoortii Shaah</string>
-    <string name="shah_champ_msg">🎉 Ramaddii taphaa 3n keessaa caalmaa fiduun shaampiyoonaa waliigalaa ta\'eera!</string>
-    <string name="shah_champ_title">Injifataa Waliigalaa Dorgommichaa: {champ}!</string>
-    <string name="shah_contact_dev_title">💻 Deeggarsa Teeknikaa fi Gargaarsa</string>
-    <string name="shah_contact_fed_title">🏢 Waajjira Muummicha Federeeshinichaa</string>
-    <string name="shah_dev_app_name_label">Maqaa Moosaajii:</string>
-    <string name="shah_dev_app_name_val">Tapha Ispoortii Aadaa Shaah</string>
-    <string name="shah_dev_info_title">⚖️ Odeeffannoo Misoomsaa</string>
-    <string name="shah_dev_name_label">Misoomsaa:</string>
-    <string name="shah_diff_easy">Salphaa</string>
-    <string name="shah_diff_hard">Ulfaataa</string>
-    <string name="shah_diff_master">Maastar</string>
-    <string name="shah_diff_medium">Giddu-galeessa</string>
-    <string name="shah_dir">ltr</string>
-    <string name="shah_err_forced_unblock_pick">Karaa banuuf cirracha morkataa 1 kaasaa!</string>
-    <string name="shah_err_orthogonal_only">⚠️ Gara shaffaaxa (diagonal) ykn buufata utaalanii dhiibuun dhorkaadha! (Seera 4.15)</string>
-    <string name="shah_err_pick_opponent">Maaloo cirracha morkataa filadhaatii kaasaa!</string>
-    <string name="shah_err_select_opponent_eat">Cirracha morkataa filadhaa!</string>
-    <string name="shah_err_station_occupied">Buufanni kun qabameera! Buufata banaa filadhaa.</string>
-    <string name="shah_fed_header_title">Federeeshinii Ispoortii Aadaa Itoophiyaa</string>
-    <string name="shah_filter_all">Seerota Hunda</string>
-    <string name="shah_filter_board">📐 Safara Boordii fi Cirrachaa</string>
-    <string name="shah_filter_play">🎮 Seeraa fi Sirna Taphaa</string>
-    <string name="shah_filter_referee">⚖️ Abbootii Murtii, Qabxii fi Adabbii</string>
-    <string name="shah_help_close_btn">✅ Hubadheera</string>
-    <string name="shah_help_modal_body">&lt;b&gt;1. Tarree 3 Deddeebi\'aa (Shuttle Automatic Win):&lt;/b&gt; Cirrachi tokko gara buufata banaatti yeroo dhiibamu tarree 3 ijaaree tarkaanfii itti aanuun gara bakka irraa ka\'etti (ykn buufata banaa ollaa) yeroo deebi\'u tarree 3 biraa kan ijaaru yoo ta\'e hundumaa nyaachuu waan danda\'uuf battalumatti seera awutoomaatikiitiin injifannoodhaan xumura!\n\n&lt;b&gt;2. Tarree 3 Dachaa (Double Mill):&lt;/b&gt; Tarkaanfii tokkoon kallattii lamaan tarree 3 yoo ijaare battalumatti injifata.\n\n&lt;b&gt;3. Seera Cufuu fi Yeroo 2 Bansiisuu (Seera 4.18 fi 4.20):&lt;/b&gt;\n• Taphataan tokko cirracha 2 fi isaa ol nyaatee bakka deemuu morkataa yoo cufe battalumatti cufaatiin injifata.\n• Cirracha 2 osoo hin nyaatin yoo cufe garuu taphataan cufe &lt;b&gt;cirracha 1ffaa&lt;/b&gt; kaasee karaa akka banu ajajama. Ammas karaan cufaa yoo ta\'e &lt;b&gt;yeroo 2ffaaf cirracha 1&lt;/b&gt; akka kaasu ajajama. Yoo banameef taphichi itti fufa; yeroo 2ffaaf kaafameefis ammas cufaa yoo ta\'e garuu taphataan itti cufame battalumatti mo\'amuudhaan taphichi xumurama!</string>
-    <string name="shah_help_modal_title">⚡ Qajeelfama Seera Awutoomaatikii fi Cufuu</string>
-    <string name="shah_hero_desc">Kaaree 3 (Magariisa, Keelloo, Diimaa), buufataalee 24, seera awutoomaatikii fi cufuu, seeraa fi dambii taphaa guutuu akkasumas gaaffilee madaallii beekumsaa 20 kan of keessatti qabate.</string>
-    <string name="shah_hero_pill1">🏆 Ramaddii Taphaa 3</string>
-    <string name="shah_hero_pill2">⚡ Seera Awutoomaatikii fi Cufuu</string>
-    <string name="shah_hero_pill3">⏱️ Lakkooftuu Sekondii 30</string>
-    <string name="shah_hero_title">Tapha Ispoortii Aadaa Shaah</string>
-    <string name="shah_lang_btn_title">Afaan Jijjiiri</string>
-    <string name="shah_lang_continue_btn">✅ Afaan Filatameen Itti Fufi</string>
-    <string name="shah_lang_modal_sub">Tapha Ispoortii Aadaa Shaah afaan barbaaddaniin taphadhaa</string>
-    <string name="shah_lang_modal_title">Afaan Filadhaa</string>
-    <string name="shah_lang_name">Afaan Oromoo</string>
-    <string name="shah_lang_sub">Itoophiyaa, Keeniyaa</string>
-    <string name="shah_lbl_address">Teessoo:</string>
-    <string name="shah_lbl_email">Iimeeyilii:</string>
-    <string name="shah_lbl_hours">Sa\'aatii Hojii:</string>
-    <string name="shah_lbl_ownership">Abbummaa:</string>
-    <string name="shah_lbl_phone">Bilbila:</string>
-    <string name="shah_match_score_summary">📊 Qabxii Dorgommii (Marsaa 3 Keessaa):\n{p1}: Qabxii {s1} | {p2}: Qabxii {s2}</string>
-    <string name="shah_mission_desc">Ispoortiiwwan aadaa kutaalee hawaasaa garaagaraa biratti akka baratamanii fi sadarkaa addunyaatti akka beekaman akkasumas akka taphataman gochuu ergama jedhu qabatee kan ka\'e dhaabbata dha.</string>
-    <string name="shah_mission_title">Ergama</string>
-    <string name="shah_nav_game">Tapha</string>
-    <string name="shah_nav_home">Fuula Duraa</string>
-    <string name="shah_nav_quiz">Gaaffilee Madaallii</string>
-    <string name="shah_nav_rules">Seeraa fi Dambii</string>
-    <string name="shah_p1_name">Dorgomaa 1</string>
-    <string name="shah_p2_name_ai">Siistama</string>
-    <string name="shah_p2_name_human">Dorgomaa 2</string>
-    <string name="shah_priv_h1">1. Walitti Qabaa Odeeffannoo fi Kuusaa Keessoo</string>
-    <string name="shah_priv_h2">2. Nageenya Odeeffannoo fi Qaama Sadaffaaf Dhiyeessuu Dhiisuu</string>
-    <string name="shah_priv_h3">3. Nageenya Maatii fi Hambaa Aadaa</string>
-    <string name="shah_priv_h4">4. Quunnamtii</string>
-    <string name="shah_priv_p1">Moosaajiin ispoortii Shaah kun odeeffannoo dhuunfaa fayyadamtootaa (maqaa, lakkoofsa bilbilaa, suuraa ykn teessoo) hin gaafatu, hin sassaabu; qaama sadaffaafis dabarsee hin kennu. Bu\'aan taphaa, filannoon afaanii, bifti fi guddichi qubee bilbiluma fayyadamaa irratti kuufama.</string>
-    <string name="shah_priv_p2">Moosaajiin kun odeeffannoo fayyadamaa gara alatti hin ergu, hin gurguru, qaama sadaffaafis hin qoodu.</string>
-    <string name="shah_priv_p3">Moosaajiin kun qabiyyee barnootaa, ispoortii fi aadaa waan qabuuf garee umurii hundaaf mijataa ta\'ee ijaarame.</string>
-    <string name="shah_priv_p4">Gaaffii imaammata iccitii kamiyyuu:</string>
-    <string name="shah_privacy_eff_date">Guyyaa Hojiirra Oole: Amajjii 1, 2026</string>
-    <string name="shah_privacy_title">🛡️ Imaammata Iccitii fi Waliigaltee</string>
-    <string name="shah_quiz_correct">✅ Sirrii dha!</string>
-    <string name="shah_quiz_header_title">Qormaata Beekumsaa Seeraa fi Dambii Shaah</string>
-    <string name="shah_quiz_next_btn">Gaaffii Itti Aanu ➡️</string>
-    <string name="shah_quiz_prev_btn">⬅️ Duraa</string>
-    <string name="shah_quiz_q_word">Gaaffii</string>
-    <string name="shah_quiz_restart_btn">🔄 Haaraa Jalqabi</string>
-    <string name="shah_quiz_score_word">Qabxii:</string>
-    <string name="shah_quiz_see_result_btn">🏁 Bu\'aa Ilaali</string>
-    <string name="shah_quiz_wrong">❌ Dogoggora!</string>
-    <string name="shah_ref_card_meta">&lt;b&gt;Bakka Dorgommii:&lt;/b&gt; ____________________ &amp;nbsp;|&amp;nbsp; &lt;b&gt;Guyyaa:&lt;/b&gt; ____________ &amp;nbsp;|&amp;nbsp; &lt;b&gt;Saala:&lt;/b&gt; Dhi / Dub</string>
-    <string name="shah_ref_card_title">📋 Unka Dorgomsiisaa fi Galmeessa Bu\'aa Dorgommii Shaah</string>
-    <string name="shah_ref_td30s">Sekondii 30/tarkaanfii</string>
-    <string name="shah_ref_td_p1_win">Taphataa 1</string>
-    <string name="shah_ref_td_r1">Marsaa 1ffaa</string>
-    <string name="shah_ref_td_r2">Marsaa 2ffaa</string>
-    <string name="shah_ref_td_r3">Marsaa 3ffaa</string>
-    <string name="shah_ref_th_p1">Taphataa 1 (Hafe/Nyaate)</string>
-    <string name="shah_ref_th_p2">Taphataa 2 (Hafe/Nyaate)</string>
-    <string name="shah_ref_th_pts">Qabxii</string>
-    <string name="shah_ref_th_round">Marsaa</string>
-    <string name="shah_ref_th_time">Sa\'aatii Sochii</string>
-    <string name="shah_ref_th_winner">Injifataa Marsaa</string>
-    <string name="shah_report_issue_body_hint">Rakkoo isin mudate ykn ergaa keessan asitti barreessaa...</string>
-    <string name="shah_report_issue_desc">Moosaajii irratti rakkoon yoo isin mudate armaan gaditti barreessaatii kallattiin gara iimeeyilii Federeeshiniitti ergaa.</string>
-    <string name="shah_report_issue_empty_err">Maaloo ergaa keessan barreessaa!</string>
-    <string name="shah_report_issue_send_btn">Gara Iimeeyiliitti Ergi</string>
-    <string name="shah_report_issue_subject_hint">Mata-duree (Fkn: Rakkoo Teeknikaa)</string>
-    <string name="shah_report_issue_title">Rakkoo ykn Yaada Kallattiin Ergaa</string>
-    <string name="shah_round_complete_title">Marsaan {round} Xumurameera!</string>
-    <string name="shah_round_word">Marsaa</string>
-    <string name="shah_rules_main_desc">Seeraa fi dambii dorgommii ispoortii Shaah, safara boordii fi cirrachaa akkasumas qajeelfama sirna taphaa guutuu.</string>
-    <string name="shah_rules_main_title">Seeraa fi Dambii Guutuu Ispoortii Aadaa Shaah</string>
-    <string name="shah_score_word">Qabxii:</string>
-    <string name="shah_set_ai_level_title">🧠 Sadarkaa Yaaduu Siistamaa</string>
-    <string name="shah_set_font_sub">Barreeffama guddisuu fi xiqqeessuu</string>
-    <string name="shah_set_font_title">🔤 Guddina Barreeffamaa</string>
-    <string name="shah_set_lang_btn">Jijjiiri</string>
-    <string name="shah_set_lang_sub">Afaan moosaajichaa jijjiiraa</string>
-    <string name="shah_set_lang_title">🌐 Afaan</string>
-    <string name="shah_set_num_sub">Boordii irratti lakkoofsa agarsiisuu</string>
-    <string name="shah_set_num_title">🔢 Lakkoofsa Buufataa (1–24)</string>
-    <string name="shah_set_rules_help_sub">Tarree 3 deddeebi\'aa fi seera cufuu</string>
-    <string name="shah_set_rules_help_title">⚡ Qajeelfama Seera Awutoomaatikii</string>
-    <string name="shah_set_sound_sub">Sagalee fi hollannaa taphaa</string>
-    <string name="shah_set_sound_title">🔊 Sagalee fi Hollannaa</string>
-    <string name="shah_set_stats_title">📊 Istaatistiksii Taphaa</string>
-    <string name="shah_set_theme_sub">Dukkana / Ifa</string>
-    <string name="shah_set_theme_title">🌓 Bifa Fuulaa</string>
-    <string name="shah_settings_header">⚙️ Qindaa\'inaa fi Meeshaalee</string>
-    <string name="shah_share_app_btn">Moosaajii Qoodi (Share)</string>
-    <string name="shah_share_app_message">Tapha Ispoortii Aadaa Shaah bilbila keessan irratti taphadhaa! Federeeshinii Ispoortii Aadaa Itoophiyaa.</string>
-    <string name="shah_show_nums">Lakkoofsa Agarsiisi</string>
-    <string name="shah_social_section_title">Fuulawwan Miidiyaa Hawaasummaa Keenya</string>
-    <string name="shah_sound_title">Sagalee</string>
-    <string name="shah_spec_r1_c1">Boordii Taphaa (Saanqaa)</string>
-    <string name="shah_spec_r1_c2">40 × 40 cm</string>
-    <string name="shah_spec_r1_c3">Kaaree 3 (Magariisa, Keelloo, Diimaa) fageenya 5 cm tiin kan qoodaman</string>
-    <string name="shah_spec_r2_c1">Sararootaa fi Buufataalee</string>
-    <string name="shah_spec_r2_c2">8 Dhaabbataa fi 8 Dalgaa</string>
-    <string name="shah_spec_r2_c3">Halluu gurraachaan kan sararaman, sarara tokko irra buufata 3 (ida\'ama buufata 24)</string>
-    <string name="shah_spec_r3_c1">Cirracha Taphaa</string>
-    <string name="shah_spec_r3_c2">Cirracha 32 (24+8)</string>
-    <string name="shah_spec_r3_c3">Bal\'inni isaanii raadiyasii 1 cm kan hin caalle (12+12 taphaa fi 4+4 eeggataa)</string>
-    <string name="shah_spec_r4_c1">Sa\'aatii Yaaduu</string>
-    <string name="shah_spec_r4_c2">Sekondii 30</string>
-    <string name="shah_spec_r4_c3">Tarkaanfii tokkoof sekondii 30; marsaawwan gidduutti boqonnaa daqiiqaa 5</string>
-    <string name="shah_spec_th1">Gosa Meeshaa</string>
-    <string name="shah_spec_th2">Safara / Baay\'ina</string>
-    <string name="shah_spec_th3">Ibsa Istaandaardii</string>
-    <string name="shah_splash_sub">Federeeshinii Ispoortii Aadaa Itoophiyaa</string>
-    <string name="shah_splash_title">Tapha Ispoortii Aadaa Shaah</string>
-    <string name="shah_starter_modal_desc">Bu\'uura Seera 4.3 tiin cirracha kaa\'uu eenyu akka jalqabu barbaaddu?</string>
-    <string name="shah_starter_modal_title">Filannoo Taphaa fi Carraa</string>
-    <string name="shah_stat_board">Boordii:</string>
-    <string name="shah_stat_eaten">Kan Nyaate:</string>
-    <string name="shah_stat_fouls">Balleessaa:</string>
-    <string name="shah_stat_hand">Harka:</string>
-    <string name="shah_stat_loss_lbl">Mo\'amuu</string>
-    <string name="shah_stat_matches_lbl">Taphoota</string>
-    <string name="shah_stat_wins_lbl">Injifannoo</string>
-    <string name="shah_svg40cm">40 cm</string>
-    <string name="shah_svg5cm">5 cm</string>
-    <string name="shah_svg_green">Magariisa</string>
-    <string name="shah_svg_p1_label">Taphataa 1 =</string>
-    <string name="shah_svg_p2_label">Taphataa 2 =</string>
-    <string name="shah_svg_pebbles_title">Cirracha Taphaa (12 + 12 Taphaa fi 4 + 4 Eeggataa = 32)</string>
-    <string name="shah_svg_red">Diimaa</string>
-    <string name="shah_svg_station_label">Buufata Cirracha Kaa\'anii</string>
-    <string name="shah_svg_title">Safara Boordii Taphaa fi Cirracha Ispoortii Shaah</string>
-    <string name="shah_svg_yellow">Keelloo</string>
-    <string name="shah_tab_about">Waa\'ee Keenya</string>
-    <string name="shah_tab_contact">Quunnamtii</string>
-    <string name="shah_tab_privacy">Imaammata Iccitii</string>
-    <string name="shah_toast_dark_on">🌙 Bifti Dukkanaa banameera</string>
-    <string name="shah_toast_first_mill">🎯 {player} dursa tarree 3 (Shaah) ijaareera!</string>
-    <string name="shah_toast_font_reset">🔤 Guddichi qubee gara 100%tti deebi\'eera</string>
-    <string name="shah_toast_light_on">☀️ Bifti Ifaa banameera</string>
-    <string name="shah_toast_num_off">🔢 Lakkoofsi buufataa dhokateera</string>
-    <string name="shah_toast_num_on">🔢 Lakkoofsi buufataa mul\'ateera</string>
-    <string name="shah_toast_paused">⏸️ Taphichi yeroof dhaabbateera</string>
-    <string name="shah_toast_quiz_restarted">🔄 Qormaanni haaraa jalqabameera!</string>
-    <string name="shah_toast_random_lot">🎲 Carraadhaan {starter} dursa cirracha kaa\'a!</string>
-    <string name="shah_toast_red_card">🟥 Balleessaa 5ffaa! {player} Kaardii Diimaadhaan dorgommii ala ta\'eera!</string>
-    <string name="shah_toast_resumed">▶️ Taphichi itti fufeera</string>
-    <string name="shah_toast_sound_off">Sagaleen cufameera 🔇</string>
-    <string name="shah_toast_sound_on">Sagaleen banameera 🔊</string>
-    <string name="shah_toast_stats_reset">📊 Istaatistiksiin haqameera</string>
-    <string name="shah_toast_still_blocked2">⚠️ Ammas cufaadha! Yeroo 2ffaaf cirracha 1 kaasaa!</string>
-    <string name="shah_toast_timeout_auto">⏱️ Yeroon yaaduu sekondii 30 dhumateera! Tarkaanfiin awutoomaatikii fudhatameera.</string>
-    <string name="shah_toast_timeout_foul">⚠️ Yeroon yaaduu sekondii 30 dhumateera! {player} irratti balleessaan {fouls}/5 galmaa\'eera. Sekondiin 30 haaraan eegaleera!</string>
-    <string name="shah_toast_vib_off">📳 Hollannaan cufameera</string>
-    <string name="shah_toast_vib_on">📳 Hollannaan banameera</string>
-    <string name="shah_toast_yellow_card">🟨 Balleessaa 4ffaa! {player}f Kaardiin Keelloo akeekkachiisaa kennameera! (4/5)</string>
-    <string name="shah_values_desc">Bu\'a-qabeessummaa;\nIftoominaa fi Itti-gaafatamummaa;\nKutannoo;\nHojii Garee;\nCaalmaa Agarsiisuu;\nQulqullinni isaan ijoo dha.</string>
-    <string name="shah_values_title">Duudhaalee</string>
-    <string name="shah_vision_desc">Hirmaannaa ispoortii aadaa bu\'uura ummataa qabu guddisuu fi babal\'isuun sadarkaa addunyaatti ispoortiiwwan aadaa biyya keenyaa beekamtii argatanii arguu fi dhaqqabamummaa isaanii guddisuu irratti mul\'ata kan godhate dhaabbata biyya keessaa ti.</string>
-    <string name="shah_vision_title">Mul\'ata</string>
-    <string name="shah_visual_card_desc">Boordiin Shaah kaareewwan walirra tuulaman 3 (Magariisa, Keelloo, Diimaa), kaareewwan gidduutti fageenya 5 cm, sararoota dhaabbataa 8 fi dalgaa 8 akkasumas buufataalee cirracha kaa\'anii 24 qaba.</string>
-    <string name="shah_visual_card_title">Safara Boordii fi Cirracha Dorgommii Shaah (40×40 cm)</string>
-    <string name="shah_wait_turn">Eegaa</string>
-    <string name="shah_win_auto_msg">🔥 Injifataa Seera Awutoomaatikii!\n\n{player} cirracha isaa Buufata {from} irraa gara Buufata {to} yeroo dhiibu {reason} waan uumeef seera awutoomaatikiitiin hundumaa nyaachuu waan danda\'uuf taphicha injifannoodhaan xumureera!</string>
-    <string name="shah_win_blocked_after2">🔒 Cufaatii Irratti Injifataa (Seera 4.18 / 4.20)!\n\nYeroo 2 cirrachi kaafamus karaan {opp} guutummaatti cufaa waan ta\'eef {player} taphicha injifannoodhaan xumureera!</string>
-    <string name="shah_win_by_blockade">🔒 Cufaatii Irratti Injifataa (Seera 4.18)!\n\n{blocker} cirracha lamaa fi isaa ol nyaatee karaa sochii {active} guutummaatti waan cufeef injifannoodhaan xumureera!</string>
-    <string name="shah_win_by_red_card">🟥 Murtee Kaardii Diimaatiin Injifataa (Seera 6.2)!\n\n{offender} yeroo yaaduu sekondii 30 yeroo 5ffaaf waan dabarseef Kaardii Diimaadhaan (balleessaa 5/5) waan gaggeeffameef {winner} marsaa kana injifateera!</string>
-    <string name="shah_win_less_than3">🏆 Xumura Taphaa (Seera 4.19)!\n\n{opp} boordii irra cirrachi 3 gadi ({rem}) qofti waan hafeef {player} injifateera!</string>
-    <string name="shah_win_unblock_less_than3">🏆 Xumura Taphaa (Seera 4.19)!\n\n{opp} cirrachi 3 gadi waan hafeef {player} injifateera!</string>
-    <string name="shah_your_turn">Dabaree Keessan</string>
+    <string name="app_name" formatted="false">ሻህ</string>
+    <string name="fed_email" formatted="false">eth.culturalsportsfed.1977@gmail.com</string>
+    <string name="fed_telegram_handle" formatted="false">@EthiopianculturalsportFDE</string>
+    <string name="fed_telegram_url" formatted="false">https://t.me/EthiopianculturalsportFDE</string>
+    <string name="fed_facebook_handle" formatted="false">@ECSF</string>
+    <string name="fed_facebook_url" formatted="false">https://www.facebook.com/profile.php?id=61558619311072</string>
+    <string name="shah_about_intro" formatted="false">Ispoortiiwwan aadaa keenya guutummaa biyyattii keessatti qorachuuf, eeguuf, babal\'isuuf, beeksisuuf, misoomsuuf akkasumas hoogganuuf Ministeera Aadaa fi Ispoortii FDRI irraa hayyamni kennameefii bara 1970 A.L.I kan hundeeffame dhaabbata angafaa dha.</string>
+    <string name="shah_about_sub" formatted="false">የኢትዮጵያ ባህል ስፖርቶች ፌዴሬሽን</string>
+    <string name="shah_address_desc" formatted="false">📍 Istaadiyeemii Finfinnee Hospitaala Beetazaataa cinaa Gamoo OBS Darbii 4ffaa Biiroo Lakk. 406</string>
+    <string name="shah_address_title" formatted="false">Teessoo</string>
+    <string name="shah_ai_level_label" formatted="false">Sadarkaa Yaaduu Siistamaa:</string>
+    <string name="shah_ai_thinking" formatted="false">Yaadaa jira...</string>
+    <string name="shah_auto_reason_double" formatted="false">Tarree 3 Kallattii Lamaa</string>
+    <string name="shah_auto_reason_shuttle" formatted="false">Tarree 3 Deddeebi\'aa (Buufata {a} ↔ Buufata {b} gidduu deddeebi\'uun)</string>
+    <string name="shah_back_title" formatted="false">Deebi\'i</string>
+    <string name="shah_banner_forced_unblock1" formatted="false">⚠️ Seera 4.20: Karaan {active} cufameera! {blocker} cirracha 1 kaasuun karaa haa banu (Baniinsa 1ffaa)</string>
+    <string name="shah_banner_initial_remove1" formatted="false">📌 Seera 4.9: {player}, cirracha morkataa 1ffaa kaasaa</string>
+    <string name="shah_banner_initial_remove2" formatted="false">📌 Seera 4.9: Amma {player}, cirracha morkataa 1 kaasaa</string>
+    <string name="shah_banner_mill_eat" formatted="false">🎯 Tarree 3 (Shaah)! {player}, cirracha morkataa 1 nyaadhaa</string>
+    <string name="shah_banner_normal_turn" formatted="false">🎮 Dabaree {player} — Cirracha dhiibaa</string>
+    <string name="shah_banner_path_opened" formatted="false">✅ Karaan banameera! {opp} haa taphatu</string>
+    <string name="shah_banner_paused" formatted="false">⏸️ Taphichi Yeroof Dhaabbateera — Itti fufuuf «Itti Fufi» cuqaasaa</string>
+    <string name="shah_banner_place_start" formatted="false">📍 Adeemsa Qubachiisuu: {player}, cirracha jalqabaa kaa\'aa</string>
+    <string name="shah_banner_place_turn" formatted="false">📍 Dabaree Qubachiisuu: {player}, cirracha kaa\'aa</string>
+    <string name="shah_banner_ready" formatted="false">🎮 Tapha jalqabuuf qophii dha</string>
+    <string name="shah_banner_still_blocked2" formatted="false">⚠️ Ammas karaan {opp} cufaadha! {player} yeroo 2ffaaf cirracha 1 kaasaa!</string>
+    <string name="shah_banner_timeout_foul" formatted="false">⚠️ Balleessaa Yeroo ({fouls}/5)! {player}, sekondii 30 keessatti taphadhaa</string>
+    <string name="shah_banner_yellow_card" formatted="false">🟨 Kaardii Keelloo {player}f (Balleessaa 4/5)! Ammas dabaree keessan — sekondii 30 keessatti taphadhaa</string>
+    <string name="shah_brand_title" formatted="false">Ispoortii Shaah</string>
+    <string name="shah_btn_exit_home" formatted="false">🏠 Bahiinsa</string>
+    <string name="shah_btn_go_home" formatted="false">🏠 Gara Fuula Duraatti</string>
+    <string name="shah_btn_go_quiz" formatted="false">🎓 Gara Qormaata Gaaffilee 20tti Darbi</string>
+    <string name="shah_btn_modal_home" formatted="false">🏠 Fuula Duraa</string>
+    <string name="shah_btn_new_match" formatted="false">🔄 Dorgommii Haaraa</string>
+    <string name="shah_btn_new_round" formatted="false">🔄 Marsaa Haaraa</string>
+    <string name="shah_btn_next_round" formatted="false">▶️ Marsaa Itti Aanu (Marsaa {round})</string>
+    <string name="shah_btn_pause" formatted="false">⏸️ Dhaabi</string>
+    <string name="shah_btn_play" formatted="false">▶️ Itti Fufi</string>
+    <string name="shah_btn_play_again" formatted="false">🔄 Irra Deebi\'ii Taphadhu</string>
+    <string name="shah_btn_redo" formatted="false">↪️ Irra Deebi\'i</string>
+    <string name="shah_btn_retry_quiz" formatted="false">🔄 Irra Deebi\'ii Yaali</string>
+    <string name="shah_btn_start_ai" formatted="false">💻 Siistamni Haa Jalqabu</string>
+    <string name="shah_btn_start_p1" formatted="false">👤 Dorgomaa 1 Haa Jalqabu</string>
+    <string name="shah_btn_start_p2" formatted="false">👥 Dorgomaa 2 Haa Jalqabu</string>
+    <string name="shah_btn_start_random" formatted="false">🎲 Carraadhaan Haa Adda Bahu</string>
+    <string name="shah_btn_undo" formatted="false">↩️ Deebisi</string>
+    <string name="shah_btn_view_board" formatted="false">👁️ Boordii Ilaali</string>
+    <string name="shah_card1_badge" formatted="false">Siistama Waliin</string>
+    <string name="shah_card1_desc" formatted="false">Sadarkaa yaaduu Salphaa, Giddu-galeessa, Ulfaataa fi Maastar (Master) tiin siistama waliin dorgomaa.</string>
+    <string name="shah_card1_title" formatted="false">Siistama Waliin Taphadhaa</string>
+    <string name="shah_card2_badge" formatted="false">Dorgomtoota 2</string>
+    <string name="shah_card2_desc" formatted="false">Hiriyaa keessan waliin fuulaa fuulatti bilbila tokko irratti ramaddii taphaa 3n falmadhaa.</string>
+    <string name="shah_card2_title" formatted="false">Dorgomtoota Lama (1 fi 1)</string>
+    <string name="shah_card3_badge" formatted="false">Seeraa fi Dambii</string>
+    <string name="shah_card3_desc" formatted="false">Seerota dorgommii ispoortii Shaah, safara boordii fi cirrachaa (40×40 cm) fi sirna taphaa.</string>
+    <string name="shah_card3_title" formatted="false">Seera Guutuu + Qophii Boordii</string>
+    <string name="shah_card4_badge" formatted="false">Gaaffilee Madaallii</string>
+    <string name="shah_card4_desc" formatted="false">Seeraa fi dambii ispoortii Shaah irratti hundaa\'uun gaaffilee filannoo 20 hojjechuun beekumsa keessan madaalaa.</string>
+    <string name="shah_card4_title" formatted="false">Qormaata Beekumsaa (Gaaffilee 20)</string>
+    <string name="shah_cert_rank_high" formatted="false">🌟 Baay\'ee Ol\'aanaa! Seeraa fi dambii ispoortii Shaah sirriitti beektaniittu.</string>
+    <string name="shah_cert_rank_low" formatted="false">📖 Yaalii Gaarii! Kutaa seeraa fi dambii Shaah irra deebi\'aa dubbisaatii qormaaticha yaalaa.</string>
+    <string name="shah_cert_rank_mid" formatted="false">👏 Baay\'ee Gaarii! Seera tapha ispoortii Shaah gaarii hubattaniittu.</string>
+    <string name="shah_cert_score_line" formatted="false">Bu\'aa Argattan: {sc} / 20 ({pct}%)</string>
+    <string name="shah_cert_title" formatted="false">Waraqaa Ragaa Beekumsa Ispoortii Shaah</string>
+    <string name="shah_champ_msg" formatted="false">🎉 Ramaddii taphaa 3n keessaa caalmaa fiduun shaampiyoonaa waliigalaa ta\'eera!</string>
+    <string name="shah_champ_title" formatted="false">Injifataa Waliigalaa Dorgommichaa: {champ}!</string>
+    <string name="shah_contact_dev_title" formatted="false">💻 Deeggarsa Teeknikaa fi Gargaarsa</string>
+    <string name="shah_contact_fed_title" formatted="false">🏢 Waajjira Muummicha Federeeshinichaa</string>
+    <string name="shah_dev_app_name_label" formatted="false">Maqaa Moosaajii:</string>
+    <string name="shah_dev_app_name_val" formatted="false">Tapha Ispoortii Aadaa Shaah</string>
+    <string name="shah_dev_info_title" formatted="false">⚖️ Odeeffannoo Misoomsaa</string>
+    <string name="shah_dev_name_label" formatted="false">Misoomsaa:</string>
+    <string name="shah_diff_easy" formatted="false">Salphaa</string>
+    <string name="shah_diff_hard" formatted="false">Ulfaataa</string>
+    <string name="shah_diff_master" formatted="false">Maastar</string>
+    <string name="shah_diff_medium" formatted="false">Giddu-galeessa</string>
+    <string name="shah_dir" formatted="false">ltr</string>
+    <string name="shah_err_forced_unblock_pick" formatted="false">Karaa banuuf cirracha morkataa 1 kaasaa!</string>
+    <string name="shah_err_orthogonal_only" formatted="false">⚠️ Gara shaffaaxa (diagonal) ykn buufata utaalanii dhiibuun dhorkaadha! (Seera 4.15)</string>
+    <string name="shah_err_pick_opponent" formatted="false">Maaloo cirracha morkataa filadhaatii kaasaa!</string>
+    <string name="shah_err_select_opponent_eat" formatted="false">Cirracha morkataa filadhaa!</string>
+    <string name="shah_err_station_occupied" formatted="false">Buufanni kun qabameera! Buufata banaa filadhaa.</string>
+    <string name="shah_fed_header_title" formatted="false">Federeeshinii Ispoortii Aadaa Itoophiyaa</string>
+    <string name="shah_filter_all" formatted="false">Seerota Hunda</string>
+    <string name="shah_filter_board" formatted="false">📐 Safara Boordii fi Cirrachaa</string>
+    <string name="shah_filter_play" formatted="false">🎮 Seeraa fi Sirna Taphaa</string>
+    <string name="shah_filter_referee" formatted="false">⚖️ Abbootii Murtii, Qabxii fi Adabbii</string>
+    <string name="shah_help_close_btn" formatted="false">✅ Hubadheera</string>
+    <string name="shah_help_modal_body" formatted="false">&lt;b&gt;1. Tarree 3 Deddeebi\'aa (Shuttle Automatic Win):&lt;/b&gt; Cirrachi tokko gara buufata banaatti yeroo dhiibamu tarree 3 ijaaree tarkaanfii itti aanuun gara bakka irraa ka\'etti (ykn buufata banaa ollaa) yeroo deebi\'u tarree 3 biraa kan ijaaru yoo ta\'e hundumaa nyaachuu waan danda\'uuf battalumatti seera awutoomaatikiitiin injifannoodhaan xumura!\n\n&lt;b&gt;2. Tarree 3 Dachaa (Double Mill):&lt;/b&gt; Tarkaanfii tokkoon kallattii lamaan tarree 3 yoo ijaare battalumatti injifata.\n\n&lt;b&gt;3. Seera Cufuu fi Yeroo 2 Bansiisuu (Seera 4.18 fi 4.20):&lt;/b&gt;\n• Taphataan tokko cirracha 2 fi isaa ol nyaatee bakka deemuu morkataa yoo cufe battalumatti cufaatiin injifata.\n• Cirracha 2 osoo hin nyaatin yoo cufe garuu taphataan cufe &lt;b&gt;cirracha 1ffaa&lt;/b&gt; kaasee karaa akka banu ajajama. Ammas karaan cufaa yoo ta\'e &lt;b&gt;yeroo 2ffaaf cirracha 1&lt;/b&gt; akka kaasu ajajama. Yoo banameef taphichi itti fufa; yeroo 2ffaaf kaafameefis ammas cufaa yoo ta\'e garuu taphataan itti cufame battalumatti mo\'amuudhaan taphichi xumurama!</string>
+    <string name="shah_help_modal_title" formatted="false">⚡ Qajeelfama Seera Awutoomaatikii fi Cufuu</string>
+    <string name="shah_hero_desc" formatted="false">Kaaree 3 (Magariisa, Keelloo, Diimaa), buufataalee 24, seera awutoomaatikii fi cufuu, seeraa fi dambii taphaa guutuu akkasumas gaaffilee madaallii beekumsaa 20 kan of keessatti qabate.</string>
+    <string name="shah_hero_pill1" formatted="false">🏆 Ramaddii Taphaa 3</string>
+    <string name="shah_hero_pill2" formatted="false">⚡ Seera Awutoomaatikii fi Cufuu</string>
+    <string name="shah_hero_pill3" formatted="false">⏱️ Lakkooftuu Sekondii 30</string>
+    <string name="shah_hero_title" formatted="false">Tapha Ispoortii Aadaa Shaah</string>
+    <string name="shah_lang_btn_title" formatted="false">Afaan Jijjiiri</string>
+    <string name="shah_lang_continue_btn" formatted="false">✅ Afaan Filatameen Itti Fufi</string>
+    <string name="shah_lang_modal_sub" formatted="false">Tapha Ispoortii Aadaa Shaah afaan barbaaddaniin taphadhaa</string>
+    <string name="shah_lang_modal_title" formatted="false">Afaan Filadhaa</string>
+    <string name="shah_lang_name" formatted="false">Afaan Oromoo</string>
+    <string name="shah_lang_sub" formatted="false">Itoophiyaa, Keeniyaa</string>
+    <string name="shah_lbl_address" formatted="false">Teessoo:</string>
+    <string name="shah_lbl_email" formatted="false">Iimeeyilii:</string>
+    <string name="shah_lbl_hours" formatted="false">Sa\'aatii Hojii:</string>
+    <string name="shah_lbl_ownership" formatted="false">Abbummaa:</string>
+    <string name="shah_lbl_phone" formatted="false">Bilbila:</string>
+    <string name="shah_match_score_summary" formatted="false">📊 Qabxii Dorgommii (Marsaa 3 Keessaa):\n{p1}: Qabxii {s1} | {p2}: Qabxii {s2}</string>
+    <string name="shah_mission_desc" formatted="false">Ispoortiiwwan aadaa kutaalee hawaasaa garaagaraa biratti akka baratamanii fi sadarkaa addunyaatti akka beekaman akkasumas akka taphataman gochuu ergama jedhu qabatee kan ka\'e dhaabbata dha.</string>
+    <string name="shah_mission_title" formatted="false">Ergama</string>
+    <string name="shah_nav_game" formatted="false">Tapha</string>
+    <string name="shah_nav_home" formatted="false">Fuula Duraa</string>
+    <string name="shah_nav_quiz" formatted="false">Gaaffilee Madaallii</string>
+    <string name="shah_nav_rules" formatted="false">Seeraa fi Dambii</string>
+    <string name="shah_p1_name" formatted="false">Dorgomaa 1</string>
+    <string name="shah_p2_name_ai" formatted="false">Siistama</string>
+    <string name="shah_p2_name_human" formatted="false">Dorgomaa 2</string>
+    <string name="shah_priv_h1" formatted="false">1. Walitti Qabaa Odeeffannoo fi Kuusaa Keessoo</string>
+    <string name="shah_priv_h2" formatted="false">2. Nageenya Odeeffannoo fi Qaama Sadaffaaf Dhiyeessuu Dhiisuu</string>
+    <string name="shah_priv_h3" formatted="false">3. Nageenya Maatii fi Hambaa Aadaa</string>
+    <string name="shah_priv_h4" formatted="false">4. Quunnamtii</string>
+    <string name="shah_priv_p1" formatted="false">Moosaajiin ispoortii Shaah kun odeeffannoo dhuunfaa fayyadamtootaa (maqaa, lakkoofsa bilbilaa, suuraa ykn teessoo) hin gaafatu, hin sassaabu; qaama sadaffaafis dabarsee hin kennu. Bu\'aan taphaa, filannoon afaanii, bifti fi guddichi qubee bilbiluma fayyadamaa irratti kuufama.</string>
+    <string name="shah_priv_p2" formatted="false">Moosaajiin kun odeeffannoo fayyadamaa gara alatti hin ergu, hin gurguru, qaama sadaffaafis hin qoodu.</string>
+    <string name="shah_priv_p3" formatted="false">Moosaajiin kun qabiyyee barnootaa, ispoortii fi aadaa waan qabuuf garee umurii hundaaf mijataa ta\'ee ijaarame.</string>
+    <string name="shah_priv_p4" formatted="false">Gaaffii imaammata iccitii kamiyyuu:</string>
+    <string name="shah_privacy_eff_date" formatted="false">Guyyaa Hojiirra Oole: Amajjii 1, 2026</string>
+    <string name="shah_privacy_title" formatted="false">🛡️ Imaammata Iccitii fi Waliigaltee</string>
+    <string name="shah_quiz_correct" formatted="false">✅ Sirrii dha!</string>
+    <string name="shah_quiz_header_title" formatted="false">Qormaata Beekumsaa Seeraa fi Dambii Shaah</string>
+    <string name="shah_quiz_next_btn" formatted="false">Gaaffii Itti Aanu ➡️</string>
+    <string name="shah_quiz_prev_btn" formatted="false">⬅️ Duraa</string>
+    <string name="shah_quiz_q_word" formatted="false">Gaaffii</string>
+    <string name="shah_quiz_restart_btn" formatted="false">🔄 Haaraa Jalqabi</string>
+    <string name="shah_quiz_score_word" formatted="false">Qabxii:</string>
+    <string name="shah_quiz_see_result_btn" formatted="false">🏁 Bu\'aa Ilaali</string>
+    <string name="shah_quiz_wrong" formatted="false">❌ Dogoggora!</string>
+    <string name="shah_ref_card_meta" formatted="false">&lt;b&gt;Bakka Dorgommii:&lt;/b&gt; ____________________ &amp;nbsp;|&amp;nbsp; &lt;b&gt;Guyyaa:&lt;/b&gt; ____________ &amp;nbsp;|&amp;nbsp; &lt;b&gt;Saala:&lt;/b&gt; Dhi / Dub</string>
+    <string name="shah_ref_card_title" formatted="false">📋 Unka Dorgomsiisaa fi Galmeessa Bu\'aa Dorgommii Shaah</string>
+    <string name="shah_ref_td30s" formatted="false">Sekondii 30/tarkaanfii</string>
+    <string name="shah_ref_td_p1_win" formatted="false">Taphataa 1</string>
+    <string name="shah_ref_td_r1" formatted="false">Marsaa 1ffaa</string>
+    <string name="shah_ref_td_r2" formatted="false">Marsaa 2ffaa</string>
+    <string name="shah_ref_td_r3" formatted="false">Marsaa 3ffaa</string>
+    <string name="shah_ref_th_p1" formatted="false">Taphataa 1 (Hafe/Nyaate)</string>
+    <string name="shah_ref_th_p2" formatted="false">Taphataa 2 (Hafe/Nyaate)</string>
+    <string name="shah_ref_th_pts" formatted="false">Qabxii</string>
+    <string name="shah_ref_th_round" formatted="false">Marsaa</string>
+    <string name="shah_ref_th_time" formatted="false">Sa\'aatii Sochii</string>
+    <string name="shah_ref_th_winner" formatted="false">Injifataa Marsaa</string>
+    <string name="shah_report_issue_body_hint" formatted="false">Rakkoo isin mudate ykn ergaa keessan asitti barreessaa...</string>
+    <string name="shah_report_issue_desc" formatted="false">Moosaajii irratti rakkoon yoo isin mudate armaan gaditti barreessaatii kallattiin gara iimeeyilii Federeeshiniitti ergaa.</string>
+    <string name="shah_report_issue_empty_err" formatted="false">Maaloo ergaa keessan barreessaa!</string>
+    <string name="shah_report_issue_send_btn" formatted="false">Gara Iimeeyiliitti Ergi</string>
+    <string name="shah_report_issue_subject_hint" formatted="false">Mata-duree (Fkn: Rakkoo Teeknikaa)</string>
+    <string name="shah_report_issue_title" formatted="false">Rakkoo ykn Yaada Kallattiin Ergaa</string>
+    <string name="shah_round_complete_title" formatted="false">Marsaan {round} Xumurameera!</string>
+    <string name="shah_round_word" formatted="false">Marsaa</string>
+    <string name="shah_rules_main_desc" formatted="false">Seeraa fi dambii dorgommii ispoortii Shaah, safara boordii fi cirrachaa akkasumas qajeelfama sirna taphaa guutuu.</string>
+    <string name="shah_rules_main_title" formatted="false">Seeraa fi Dambii Guutuu Ispoortii Aadaa Shaah</string>
+    <string name="shah_score_word" formatted="false">Qabxii:</string>
+    <string name="shah_set_ai_level_title" formatted="false">🧠 Sadarkaa Yaaduu Siistamaa</string>
+    <string name="shah_set_font_sub" formatted="false">Barreeffama guddisuu fi xiqqeessuu</string>
+    <string name="shah_set_font_title" formatted="false">🔤 Guddina Barreeffamaa</string>
+    <string name="shah_set_lang_btn" formatted="false">Jijjiiri</string>
+    <string name="shah_set_lang_sub" formatted="false">Afaan moosaajichaa jijjiiraa</string>
+    <string name="shah_set_lang_title" formatted="false">🌐 Afaan</string>
+    <string name="shah_set_num_sub" formatted="false">Boordii irratti lakkoofsa agarsiisuu</string>
+    <string name="shah_set_num_title" formatted="false">🔢 Lakkoofsa Buufataa (1–24)</string>
+    <string name="shah_set_rules_help_sub" formatted="false">Tarree 3 deddeebi\'aa fi seera cufuu</string>
+    <string name="shah_set_rules_help_title" formatted="false">⚡ Qajeelfama Seera Awutoomaatikii</string>
+    <string name="shah_set_sound_sub" formatted="false">Sagalee fi hollannaa taphaa</string>
+    <string name="shah_set_sound_title" formatted="false">🔊 Sagalee fi Hollannaa</string>
+    <string name="shah_set_stats_title" formatted="false">📊 Istaatistiksii Taphaa</string>
+    <string name="shah_set_theme_sub" formatted="false">Dukkana / Ifa</string>
+    <string name="shah_set_theme_title" formatted="false">🌓 Bifa Fuulaa</string>
+    <string name="shah_settings_header" formatted="false">⚙️ Qindaa\'inaa fi Meeshaalee</string>
+    <string name="shah_share_app_btn" formatted="false">Moosaajii Qoodi (Share)</string>
+    <string name="shah_share_app_message" formatted="false">Tapha Ispoortii Aadaa Shaah bilbila keessan irratti taphadhaa! Federeeshinii Ispoortii Aadaa Itoophiyaa.</string>
+    <string name="shah_show_nums" formatted="false">Lakkoofsa Agarsiisi</string>
+    <string name="shah_social_section_title" formatted="false">Fuulawwan Miidiyaa Hawaasummaa Keenya</string>
+    <string name="shah_sound_title" formatted="false">Sagalee</string>
+    <string name="shah_spec_r1_c1" formatted="false">Boordii Taphaa (Saanqaa)</string>
+    <string name="shah_spec_r1_c2" formatted="false">40 × 40 cm</string>
+    <string name="shah_spec_r1_c3" formatted="false">Kaaree 3 (Magariisa, Keelloo, Diimaa) fageenya 5 cm tiin kan qoodaman</string>
+    <string name="shah_spec_r2_c1" formatted="false">Sararootaa fi Buufataalee</string>
+    <string name="shah_spec_r2_c2" formatted="false">8 Dhaabbataa fi 8 Dalgaa</string>
+    <string name="shah_spec_r2_c3" formatted="false">Halluu gurraachaan kan sararaman, sarara tokko irra buufata 3 (ida\'ama buufata 24)</string>
+    <string name="shah_spec_r3_c1" formatted="false">Cirracha Taphaa</string>
+    <string name="shah_spec_r3_c2" formatted="false">Cirracha 32 (24+8)</string>
+    <string name="shah_spec_r3_c3" formatted="false">Bal\'inni isaanii raadiyasii 1 cm kan hin caalle (12+12 taphaa fi 4+4 eeggataa)</string>
+    <string name="shah_spec_r4_c1" formatted="false">Sa\'aatii Yaaduu</string>
+    <string name="shah_spec_r4_c2" formatted="false">Sekondii 30</string>
+    <string name="shah_spec_r4_c3" formatted="false">Tarkaanfii tokkoof sekondii 30; marsaawwan gidduutti boqonnaa daqiiqaa 5</string>
+    <string name="shah_spec_th1" formatted="false">Gosa Meeshaa</string>
+    <string name="shah_spec_th2" formatted="false">Safara / Baay\'ina</string>
+    <string name="shah_spec_th3" formatted="false">Ibsa Istaandaardii</string>
+    <string name="shah_splash_sub" formatted="false">Federeeshinii Ispoortii Aadaa Itoophiyaa</string>
+    <string name="shah_splash_title" formatted="false">Tapha Ispoortii Aadaa Shaah</string>
+    <string name="shah_starter_modal_desc" formatted="false">Bu\'uura Seera 4.3 tiin cirracha kaa\'uu eenyu akka jalqabu barbaaddu?</string>
+    <string name="shah_starter_modal_title" formatted="false">Filannoo Taphaa fi Carraa</string>
+    <string name="shah_stat_board" formatted="false">Boordii:</string>
+    <string name="shah_stat_eaten" formatted="false">Kan Nyaate:</string>
+    <string name="shah_stat_fouls" formatted="false">Balleessaa:</string>
+    <string name="shah_stat_hand" formatted="false">Harka:</string>
+    <string name="shah_stat_loss_lbl" formatted="false">Mo\'amuu</string>
+    <string name="shah_stat_matches_lbl" formatted="false">Taphoota</string>
+    <string name="shah_stat_wins_lbl" formatted="false">Injifannoo</string>
+    <string name="shah_svg40cm" formatted="false">40 cm</string>
+    <string name="shah_svg5cm" formatted="false">5 cm</string>
+    <string name="shah_svg_green" formatted="false">Magariisa</string>
+    <string name="shah_svg_p1_label" formatted="false">Taphataa 1 =</string>
+    <string name="shah_svg_p2_label" formatted="false">Taphataa 2 =</string>
+    <string name="shah_svg_pebbles_title" formatted="false">Cirracha Taphaa (12 + 12 Taphaa fi 4 + 4 Eeggataa = 32)</string>
+    <string name="shah_svg_red" formatted="false">Diimaa</string>
+    <string name="shah_svg_station_label" formatted="false">Buufata Cirracha Kaa\'anii</string>
+    <string name="shah_svg_title" formatted="false">Safara Boordii Taphaa fi Cirracha Ispoortii Shaah</string>
+    <string name="shah_svg_yellow" formatted="false">Keelloo</string>
+    <string name="shah_tab_about" formatted="false">Waa\'ee Keenya</string>
+    <string name="shah_tab_contact" formatted="false">Quunnamtii</string>
+    <string name="shah_tab_privacy" formatted="false">Imaammata Iccitii</string>
+    <string name="shah_toast_dark_on" formatted="false">🌙 Bifti Dukkanaa banameera</string>
+    <string name="shah_toast_first_mill" formatted="false">🎯 {player} dursa tarree 3 (Shaah) ijaareera!</string>
+    <string name="shah_toast_font_reset" formatted="false">🔤 Guddichi qubee gara 100%tti deebi\'eera</string>
+    <string name="shah_toast_light_on" formatted="false">☀️ Bifti Ifaa banameera</string>
+    <string name="shah_toast_num_off" formatted="false">🔢 Lakkoofsi buufataa dhokateera</string>
+    <string name="shah_toast_num_on" formatted="false">🔢 Lakkoofsi buufataa mul\'ateera</string>
+    <string name="shah_toast_paused" formatted="false">⏸️ Taphichi yeroof dhaabbateera</string>
+    <string name="shah_toast_quiz_restarted" formatted="false">🔄 Qormaanni haaraa jalqabameera!</string>
+    <string name="shah_toast_random_lot" formatted="false">🎲 Carraadhaan {starter} dursa cirracha kaa\'a!</string>
+    <string name="shah_toast_red_card" formatted="false">🟥 Balleessaa 5ffaa! {player} Kaardii Diimaadhaan dorgommii ala ta\'eera!</string>
+    <string name="shah_toast_resumed" formatted="false">▶️ Taphichi itti fufeera</string>
+    <string name="shah_toast_sound_off" formatted="false">Sagaleen cufameera 🔇</string>
+    <string name="shah_toast_sound_on" formatted="false">Sagaleen banameera 🔊</string>
+    <string name="shah_toast_stats_reset" formatted="false">📊 Istaatistiksiin haqameera</string>
+    <string name="shah_toast_still_blocked2" formatted="false">⚠️ Ammas cufaadha! Yeroo 2ffaaf cirracha 1 kaasaa!</string>
+    <string name="shah_toast_timeout_auto" formatted="false">⏱️ Yeroon yaaduu sekondii 30 dhumateera! Tarkaanfiin awutoomaatikii fudhatameera.</string>
+    <string name="shah_toast_timeout_foul" formatted="false">⚠️ Yeroon yaaduu sekondii 30 dhumateera! {player} irratti balleessaan {fouls}/5 galmaa\'eera. Sekondiin 30 haaraan eegaleera!</string>
+    <string name="shah_toast_vib_off" formatted="false">📳 Hollannaan cufameera</string>
+    <string name="shah_toast_vib_on" formatted="false">📳 Hollannaan banameera</string>
+    <string name="shah_toast_yellow_card" formatted="false">🟨 Balleessaa 4ffaa! {player}f Kaardiin Keelloo akeekkachiisaa kennameera! (4/5)</string>
+    <string name="shah_values_desc" formatted="false">Bu\'a-qabeessummaa;\nIftoominaa fi Itti-gaafatamummaa;\nKutannoo;\nHojii Garee;\nCaalmaa Agarsiisuu;\nQulqullinni isaan ijoo dha.</string>
+    <string name="shah_values_title" formatted="false">Duudhaalee</string>
+    <string name="shah_vision_desc" formatted="false">Hirmaannaa ispoortii aadaa bu\'uura ummataa qabu guddisuu fi babal\'isuun sadarkaa addunyaatti ispoortiiwwan aadaa biyya keenyaa beekamtii argatanii arguu fi dhaqqabamummaa isaanii guddisuu irratti mul\'ata kan godhate dhaabbata biyya keessaa ti.</string>
+    <string name="shah_vision_title" formatted="false">Mul\'ata</string>
+    <string name="shah_visual_card_desc" formatted="false">Boordiin Shaah kaareewwan walirra tuulaman 3 (Magariisa, Keelloo, Diimaa), kaareewwan gidduutti fageenya 5 cm, sararoota dhaabbataa 8 fi dalgaa 8 akkasumas buufataalee cirracha kaa\'anii 24 qaba.</string>
+    <string name="shah_visual_card_title" formatted="false">Safara Boordii fi Cirracha Dorgommii Shaah (40×40 cm)</string>
+    <string name="shah_wait_turn" formatted="false">Eegaa</string>
+    <string name="shah_win_auto_msg" formatted="false">🔥 Injifataa Seera Awutoomaatikii!\n\n{player} cirracha isaa Buufata {from} irraa gara Buufata {to} yeroo dhiibu {reason} waan uumeef seera awutoomaatikiitiin hundumaa nyaachuu waan danda\'uuf taphicha injifannoodhaan xumureera!</string>
+    <string name="shah_win_blocked_after2" formatted="false">🔒 Cufaatii Irratti Injifataa (Seera 4.18 / 4.20)!\n\nYeroo 2 cirrachi kaafamus karaan {opp} guutummaatti cufaa waan ta\'eef {player} taphicha injifannoodhaan xumureera!</string>
+    <string name="shah_win_by_blockade" formatted="false">🔒 Cufaatii Irratti Injifataa (Seera 4.18)!\n\n{blocker} cirracha lamaa fi isaa ol nyaatee karaa sochii {active} guutummaatti waan cufeef injifannoodhaan xumureera!</string>
+    <string name="shah_win_by_red_card" formatted="false">🟥 Murtee Kaardii Diimaatiin Injifataa (Seera 6.2)!\n\n{offender} yeroo yaaduu sekondii 30 yeroo 5ffaaf waan dabarseef Kaardii Diimaadhaan (balleessaa 5/5) waan gaggeeffameef {winner} marsaa kana injifateera!</string>
+    <string name="shah_win_less_than3" formatted="false">🏆 Xumura Taphaa (Seera 4.19)!\n\n{opp} boordii irra cirrachi 3 gadi ({rem}) qofti waan hafeef {player} injifateera!</string>
+    <string name="shah_win_unblock_less_than3" formatted="false">🏆 Xumura Taphaa (Seera 4.19)!\n\n{opp} cirrachi 3 gadi waan hafeef {player} injifateera!</string>
+    <string name="shah_your_turn" formatted="false">Dabaree Keessan</string>
     <string-array name="shah_opt_letters">
         <item>A</item>
         <item>B</item>
         <item>C</item>
         <item>D</item>
     </string-array>
-    <string name="shah_rule_1_category">play</string>
-    <string name="shah_rule_1_title">Keewwata 1 — Hiika Ispoortii Shaah fi Seenaa Dhufaatii Isaa</string>
-    <string name="shah_rule_1_content">[1.1] Hiika: Shaah tapha gabatee aadaa taphattoonni garee lamaa fuulaafi fuulatti wal-dura taa\'uun gabatee gidduu kaa\'atanii, hubannoo fi yaadaan dhagaa ofii tarree 3\'n galchuun dhagaa morkataa nyaachuu fi karaa itti cufuun injifachuuf taphatamuudha.\n[1.2] Seenaa: Itoophiyaa keessatti keessumaa kutaa bahaa (Naannoo Somaalee, Dirree Dhawaa fi Oromiyaa) keessatti bal\'inaan kan taphatamu yoo ta\'u, Afaan Arabaatiin «Shatranj», Afaan Somaaleetiin «Shantarat», Afaan Amaaraatiin immoo «Senterej / Shah» jedhama.</string>
-    <string name="shah_rule_2_category">board</string>
-    <string name="shah_rule_2_title">Keewwata 2 — Qophii Meeshaalee Taphaa, Safaraa fi Qabiyyee</string>
-    <string name="shah_rule_2_content">[2.1.1] Qophii Gabatee: Mukaa, kaartoonii, waraqaa ykn pilaastika irraa qophaa\'uu danda\'a.\n[2.1.2] Qophii Dhagaa Taphaa: Mukaa, pilaastika ykn aluuminiyeemii irraa boca rog-arfee ykn geengoo diriiraatiin qophaa\'u.\n[2.1.3] Safaraa fi Qabiyyee Gabatee:\n• 2.1.3.1: Dheerinnii fi dalgee gabatee taphaa 40 × 40 cm dha.\n• 2.1.3.2: Boca iskuweerii kan qabuu fi guddaa irraa gara xiqqaatti iskuweerota 3 wal-keessa jiraniin kan qoodameedha.\n• 2.1.3.3: Fageenyi iskuweerota gidduu jiru 5 cm dha.\n• 2.1.3.4: Iskuweeriin inni guddaan Magariisa, inni gidduu Keelloo, inni xiqqaaniifi keessaa immoo Diimaa dibamuu qabu.\n• 2.1.3.5 – 2.1.3.8: Gabateen sararoota dhaabbataa 8 fi dalgee 8 halluu gurraachaan sararaman fi buufataalee 24 qaba.\n[2.1.4] Safaraa fi Baay\'ina Dhagaa: Bal\'inni isaanii raadiyasii 1 cm kan hin caalle, halluu lama kan gabatee irraa adda ta\'an: dhagaa taphaa 24 (12-12) fi eeggataaf 4-4 (8), walumaagalatti dhagaa 32 ta\'uu qabu.</string>
-    <string name="shah_rule_3_category">referee</string>
-    <string name="shah_rule_3_title">Keewwata 3 — Baay\'ina Dorgomtootaa fi Uffannaa</string>
-    <string name="shah_rule_3_content">[3.1.1] Gareen tokko dorgommiidhaaf dorgomaa tokko (1) qofa dhiyeessa.\n[3.1.2] Taphataan dorgommii jalqabe hanga xumuraatti dorgomaa ta\'ee itti fufa.\n[3.2.1] Dorgomaan uffata aadaa naannoo isaa calaqqisiisu uffatee dorgomuu qaba.</string>
-    <string name="shah_rule_4_category">play</string>
-    <string name="shah_rule_4_title">Keewwata 4 — Seeraa fi Sirna Taphaa (4.1 hanga 4.22)</string>
-    <string name="shah_rule_4_content">[4.1–4.4] Taphattoonni fuulaafi fuulatti taa\'u. Adeemsa dhagaa kaa\'uu jalqabuuf abbaa murtiitiin marsaa 1ffaa fi 3ffaa irratti carraan ni buufama.\n[4.5–4.6] Taphataan carraan ba\'eef dhagaa 1ffaa buufata barbaade irra kaa\'a; itti aansuun dhagaa 12-12 dabareedhaan tokko tokkoon kaa\'anii xumuru.\n[4.7–4.9] Adeemsa kaa\'uu keessatti taphataan dursa dhagaa 3 tarreedhaan galche tapha jalqaba. Lamaanuu tarree 3 yoo hin galchine, taphataan carraan dhagaa kaa\'uu hin baaneef tapha jalqaba. Inni jalqabu dhagaa morkataa 1 ni kaasa, inni lammaffaas 1 ni kaasa, achiis taphataan dursa dhagaa kaase dhagaa ofii gara bakka banaatti dhiibee taphata.\n[4.10–4.13] Tapha keessatti dhagaa 3 tarreedhaan kan galche dhagaa morkataa 1 ni nyaata. Dhagaa sanaaniin deddeebi\'ee (Otoomaatikii) ykn tarree dachaa yoo hojjete battaluma injifata.\n[4.15–4.16] Buufata tokko irraa gara buufata ollaa banaatti dhiibuun malee utaaluun ykn diyaagonaaliin taphachuun hin danda\'amu.\n[4.18–4.20] Seera Cufuu fi Banuu: Taphataan tokko dhagaa 2 fi isaa ol nyaatee karaa morkataa yoo cufe injifannoon xumura. Garuu dhagaa 2 osoo hin nyaatin yoo cufe, inni cufe dhagaa 1ffaa kaasee akka banuuf dirqama; ammas cufaa yoo ta\'e dhagaa 2ffaa kaasa; inni 2ffaanis ka\'ee ammas cufaa yoo ta\'e garuu taphataan itti cufame ni moo\'ama!\n[4.21–4.22] Daangaan yeroo yaaduu tarkaanfii tokkoof sekondii 30 qofa. Marsaa gidduutti boqonnaa daqiiqaa 5 tu kennama.</string>
-    <string name="shah_rule_5_category">referee</string>
-    <string name="shah_rule_5_title">Keewwata 5 fi 6 — Kenniinsa Qabxii, Xumura Taphaa fi Adabbiiwwan</string>
-    <string name="shah_rule_5_content">[5.1] Kenniinsa Qabxii: Taphni Shaah marsaa 3\'n (Best of 3) xumurama. Marsaa tokko kan moo\'eef qabxii 2; forfeedhaan (daqiiqaa 10 eegamee) kan moo\'eefis qabxii 2 kennama.\n[5.2] Xumura Taphaa: Dhagaan morkataa 3 gadi (2 yoo hafu) ykn socho\'uu akka hin dandeenyetti yoo cufamu taphni ni dhumata.\n[6.1–6.2] Gochaalee Dhorkamanii fi Kaardiiwwan: Morkataa jeequun ykn murtee abbaa murtii diduun akeekkachiisa afaanii (1ffaa–3ffaa), balleessaa 4ffaa irratti Kaardii Keelloo, balleessaa 5ffaa irratti Kaardii Diimaa fida.</string>
-    <string name="shah_rule_6_category">referee</string>
-    <string name="shah_rule_6_title">Keewwata 7, 8 fi 9 — Gahee Hoji Leenjistootaa, Hoogganootaa fi Abbootii Murtii</string>
-    <string name="shah_rule_6_content">[7.1–7.2] Leenjistootaa fi Hoogganoota Garee: Dorgommiin jalqabamuun daqiiqaa 30 dura dorgomtoota qabatanii argamuu, yeroo boqonnaa qofa gorsuu fi seeraaf bitamuu qabu.\n[8.1] Hoji Abbaa Murtii Ol\'aanaa: Daqiiqaa 30 dura argamuu, meeshaalee fi waraqaa eenyummaa mirkaneessuu, yeroo sekondii 30 to\'achuu fi dorgommicha hoogganuu.\n[8.2] Hoji Abbaa Murtii Qabxii Galmeessuu: Baay\'ina dhagaa nyaatamanii to\'achuu, bu\'aa galmeessuu fi Abbaa Murtii Ol\'aanaa waliin mallatteessuu.</string>
-    <string name="shah_quiz_1_q">1. Dheerinnii fi dalgeen gabatee tapha ispoortii Shaah inni sirriin meeqa?</string>
-    <string name="shah_quiz_1_cat">Keewwata 2 - Safara Gabatee</string>
-    <string name="shah_quiz_1_exp">Akka Keewwata 2.1.3.1\'tti dheerinnii fi dalgeen gabatee tapha Shaah 40 × 40 cm dha.</string>
+    <string name="shah_rule_1_category" formatted="false">play</string>
+    <string name="shah_rule_1_title" formatted="false">Keewwata 1 — Hiika Ispoortii Shaah fi Seenaa Dhufaatii Isaa</string>
+    <string name="shah_rule_1_content" formatted="false">[1.1] Hiika: Shaah tapha gabatee aadaa taphattoonni garee lamaa fuulaafi fuulatti wal-dura taa\'uun gabatee gidduu kaa\'atanii, hubannoo fi yaadaan dhagaa ofii tarree 3\'n galchuun dhagaa morkataa nyaachuu fi karaa itti cufuun injifachuuf taphatamuudha.\n[1.2] Seenaa: Itoophiyaa keessatti keessumaa kutaa bahaa (Naannoo Somaalee, Dirree Dhawaa fi Oromiyaa) keessatti bal\'inaan kan taphatamu yoo ta\'u, Afaan Arabaatiin «Shatranj», Afaan Somaaleetiin «Shantarat», Afaan Amaaraatiin immoo «Senterej / Shah» jedhama.</string>
+    <string name="shah_rule_2_category" formatted="false">board</string>
+    <string name="shah_rule_2_title" formatted="false">Keewwata 2 — Qophii Meeshaalee Taphaa, Safaraa fi Qabiyyee</string>
+    <string name="shah_rule_2_content" formatted="false">[2.1.1] Qophii Gabatee: Mukaa, kaartoonii, waraqaa ykn pilaastika irraa qophaa\'uu danda\'a.\n[2.1.2] Qophii Dhagaa Taphaa: Mukaa, pilaastika ykn aluuminiyeemii irraa boca rog-arfee ykn geengoo diriiraatiin qophaa\'u.\n[2.1.3] Safaraa fi Qabiyyee Gabatee:\n• 2.1.3.1: Dheerinnii fi dalgee gabatee taphaa 40 × 40 cm dha.\n• 2.1.3.2: Boca iskuweerii kan qabuu fi guddaa irraa gara xiqqaatti iskuweerota 3 wal-keessa jiraniin kan qoodameedha.\n• 2.1.3.3: Fageenyi iskuweerota gidduu jiru 5 cm dha.\n• 2.1.3.4: Iskuweeriin inni guddaan Magariisa, inni gidduu Keelloo, inni xiqqaaniifi keessaa immoo Diimaa dibamuu qabu.\n• 2.1.3.5 – 2.1.3.8: Gabateen sararoota dhaabbataa 8 fi dalgee 8 halluu gurraachaan sararaman fi buufataalee 24 qaba.\n[2.1.4] Safaraa fi Baay\'ina Dhagaa: Bal\'inni isaanii raadiyasii 1 cm kan hin caalle, halluu lama kan gabatee irraa adda ta\'an: dhagaa taphaa 24 (12-12) fi eeggataaf 4-4 (8), walumaagalatti dhagaa 32 ta\'uu qabu.</string>
+    <string name="shah_rule_3_category" formatted="false">referee</string>
+    <string name="shah_rule_3_title" formatted="false">Keewwata 3 — Baay\'ina Dorgomtootaa fi Uffannaa</string>
+    <string name="shah_rule_3_content" formatted="false">[3.1.1] Gareen tokko dorgommiidhaaf dorgomaa tokko (1) qofa dhiyeessa.\n[3.1.2] Taphataan dorgommii jalqabe hanga xumuraatti dorgomaa ta\'ee itti fufa.\n[3.2.1] Dorgomaan uffata aadaa naannoo isaa calaqqisiisu uffatee dorgomuu qaba.</string>
+    <string name="shah_rule_4_category" formatted="false">play</string>
+    <string name="shah_rule_4_title" formatted="false">Keewwata 4 — Seeraa fi Sirna Taphaa (4.1 hanga 4.22)</string>
+    <string name="shah_rule_4_content" formatted="false">[4.1–4.4] Taphattoonni fuulaafi fuulatti taa\'u. Adeemsa dhagaa kaa\'uu jalqabuuf abbaa murtiitiin marsaa 1ffaa fi 3ffaa irratti carraan ni buufama.\n[4.5–4.6] Taphataan carraan ba\'eef dhagaa 1ffaa buufata barbaade irra kaa\'a; itti aansuun dhagaa 12-12 dabareedhaan tokko tokkoon kaa\'anii xumuru.\n[4.7–4.9] Adeemsa kaa\'uu keessatti taphataan dursa dhagaa 3 tarreedhaan galche tapha jalqaba. Lamaanuu tarree 3 yoo hin galchine, taphataan carraan dhagaa kaa\'uu hin baaneef tapha jalqaba. Inni jalqabu dhagaa morkataa 1 ni kaasa, inni lammaffaas 1 ni kaasa, achiis taphataan dursa dhagaa kaase dhagaa ofii gara bakka banaatti dhiibee taphata.\n[4.10–4.13] Tapha keessatti dhagaa 3 tarreedhaan kan galche dhagaa morkataa 1 ni nyaata. Dhagaa sanaaniin deddeebi\'ee (Otoomaatikii) ykn tarree dachaa yoo hojjete battaluma injifata.\n[4.15–4.16] Buufata tokko irraa gara buufata ollaa banaatti dhiibuun malee utaaluun ykn diyaagonaaliin taphachuun hin danda\'amu.\n[4.18–4.20] Seera Cufuu fi Banuu: Taphataan tokko dhagaa 2 fi isaa ol nyaatee karaa morkataa yoo cufe injifannoon xumura. Garuu dhagaa 2 osoo hin nyaatin yoo cufe, inni cufe dhagaa 1ffaa kaasee akka banuuf dirqama; ammas cufaa yoo ta\'e dhagaa 2ffaa kaasa; inni 2ffaanis ka\'ee ammas cufaa yoo ta\'e garuu taphataan itti cufame ni moo\'ama!\n[4.21–4.22] Daangaan yeroo yaaduu tarkaanfii tokkoof sekondii 30 qofa. Marsaa gidduutti boqonnaa daqiiqaa 5 tu kennama.</string>
+    <string name="shah_rule_5_category" formatted="false">referee</string>
+    <string name="shah_rule_5_title" formatted="false">Keewwata 5 fi 6 — Kenniinsa Qabxii, Xumura Taphaa fi Adabbiiwwan</string>
+    <string name="shah_rule_5_content" formatted="false">[5.1] Kenniinsa Qabxii: Taphni Shaah marsaa 3\'n (Best of 3) xumurama. Marsaa tokko kan moo\'eef qabxii 2; forfeedhaan (daqiiqaa 10 eegamee) kan moo\'eefis qabxii 2 kennama.\n[5.2] Xumura Taphaa: Dhagaan morkataa 3 gadi (2 yoo hafu) ykn socho\'uu akka hin dandeenyetti yoo cufamu taphni ni dhumata.\n[6.1–6.2] Gochaalee Dhorkamanii fi Kaardiiwwan: Morkataa jeequun ykn murtee abbaa murtii diduun akeekkachiisa afaanii (1ffaa–3ffaa), balleessaa 4ffaa irratti Kaardii Keelloo, balleessaa 5ffaa irratti Kaardii Diimaa fida.</string>
+    <string name="shah_rule_6_category" formatted="false">referee</string>
+    <string name="shah_rule_6_title" formatted="false">Keewwata 7, 8 fi 9 — Gahee Hoji Leenjistootaa, Hoogganootaa fi Abbootii Murtii</string>
+    <string name="shah_rule_6_content" formatted="false">[7.1–7.2] Leenjistootaa fi Hoogganoota Garee: Dorgommiin jalqabamuun daqiiqaa 30 dura dorgomtoota qabatanii argamuu, yeroo boqonnaa qofa gorsuu fi seeraaf bitamuu qabu.\n[8.1] Hoji Abbaa Murtii Ol\'aanaa: Daqiiqaa 30 dura argamuu, meeshaalee fi waraqaa eenyummaa mirkaneessuu, yeroo sekondii 30 to\'achuu fi dorgommicha hoogganuu.\n[8.2] Hoji Abbaa Murtii Qabxii Galmeessuu: Baay\'ina dhagaa nyaatamanii to\'achuu, bu\'aa galmeessuu fi Abbaa Murtii Ol\'aanaa waliin mallatteessuu.</string>
+    <string name="shah_quiz_1_q" formatted="false">1. Dheerinnii fi dalgeen gabatee tapha ispoortii Shaah inni sirriin meeqa?</string>
+    <string name="shah_quiz_1_cat" formatted="false">Keewwata 2 - Safara Gabatee</string>
+    <string name="shah_quiz_1_exp" formatted="false">Akka Keewwata 2.1.3.1\'tti dheerinnii fi dalgeen gabatee tapha Shaah 40 × 40 cm dha.</string>
     <integer name="shah_quiz_1_ans">1</integer>
-    <string name="shah_quiz_1_opt_0">30 × 30 cm</string>
-    <string name="shah_quiz_1_opt_1">40 × 40 cm</string>
-    <string name="shah_quiz_1_opt_2">50 × 50 cm</string>
-    <string name="shah_quiz_1_opt_3">60 × 60 cm</string>
-    <string name="shah_quiz_2_q">2. Gabatee Shaah irratti iskuweerota sadeen wal-keessa jiran gidduu fageenyi jiru seentimeetira meeqa?</string>
-    <string name="shah_quiz_2_cat">Keewwata 2 - Safara Iskuweerotaa</string>
-    <string name="shah_quiz_2_exp">Akka Keewwata 2.1.3.3\'tti fageenyi iskuweerota gidduu jiru 5 cm dha.</string>
+    <string name="shah_quiz_1_opt_0" formatted="false">30 × 30 cm</string>
+    <string name="shah_quiz_1_opt_1" formatted="false">40 × 40 cm</string>
+    <string name="shah_quiz_1_opt_2" formatted="false">50 × 50 cm</string>
+    <string name="shah_quiz_1_opt_3" formatted="false">60 × 60 cm</string>
+    <string name="shah_quiz_2_q" formatted="false">2. Gabatee Shaah irratti iskuweerota sadeen wal-keessa jiran gidduu fageenyi jiru seentimeetira meeqa?</string>
+    <string name="shah_quiz_2_cat" formatted="false">Keewwata 2 - Safara Iskuweerotaa</string>
+    <string name="shah_quiz_2_exp" formatted="false">Akka Keewwata 2.1.3.3\'tti fageenyi iskuweerota gidduu jiru 5 cm dha.</string>
     <integer name="shah_quiz_2_ans">3</integer>
-    <string name="shah_quiz_2_opt_0">3 cm</string>
-    <string name="shah_quiz_2_opt_1">10 cm</string>
-    <string name="shah_quiz_2_opt_2">8 cm</string>
-    <string name="shah_quiz_2_opt_3">5 cm</string>
-    <string name="shah_quiz_3_q">3. Iskuweeronni sadeen gabatee Shaah isa guddaa (alaa) irraa gara isa xiqqaatti (keessaatti) walduraa duubaan halluu maalii dibamuu qabu?</string>
-    <string name="shah_quiz_3_cat">Keewwata 2 - Halluu Gabatee</string>
-    <string name="shah_quiz_3_exp">Akka Keewwata 2.1.3.4\'tti iskuweeriin inni guddaan Magariisa, inni gidduu Keelloo, inni xiqqaaniifi keessaa Diimaa dibamu.</string>
+    <string name="shah_quiz_2_opt_0" formatted="false">3 cm</string>
+    <string name="shah_quiz_2_opt_1" formatted="false">10 cm</string>
+    <string name="shah_quiz_2_opt_2" formatted="false">8 cm</string>
+    <string name="shah_quiz_2_opt_3" formatted="false">5 cm</string>
+    <string name="shah_quiz_3_q" formatted="false">3. Iskuweeronni sadeen gabatee Shaah isa guddaa (alaa) irraa gara isa xiqqaatti (keessaatti) walduraa duubaan halluu maalii dibamuu qabu?</string>
+    <string name="shah_quiz_3_cat" formatted="false">Keewwata 2 - Halluu Gabatee</string>
+    <string name="shah_quiz_3_exp" formatted="false">Akka Keewwata 2.1.3.4\'tti iskuweeriin inni guddaan Magariisa, inni gidduu Keelloo, inni xiqqaaniifi keessaa Diimaa dibamu.</string>
     <integer name="shah_quiz_3_ans">0</integer>
-    <string name="shah_quiz_3_opt_0">Magariisa, Keelloo, Diimaa</string>
-    <string name="shah_quiz_3_opt_1">Diimaa, Keelloo, Magariisa</string>
-    <string name="shah_quiz_3_opt_2">Keelloo, Magariisa, Diimaa</string>
-    <string name="shah_quiz_3_opt_3">Gurraacha, Adii, Diimaa</string>
-    <string name="shah_quiz_4_q">4. Gabateen tapha Shaah sararoota dhaabbataa fi dalgee meeqaa fi buufataalee dhagaa kaa\'umsaa meeqa qaba?</string>
-    <string name="shah_quiz_4_cat">Keewwata 2 - Sararootaa fi Buufataalee</string>
-    <string name="shah_quiz_4_exp">Akka Keewwata 2.1.3.5 fi 2.1.3.8\'tti sararoota dhaabbataa 8 fi dalgee 8 fi buufataalee 24 qaba.</string>
+    <string name="shah_quiz_3_opt_0" formatted="false">Magariisa, Keelloo, Diimaa</string>
+    <string name="shah_quiz_3_opt_1" formatted="false">Diimaa, Keelloo, Magariisa</string>
+    <string name="shah_quiz_3_opt_2" formatted="false">Keelloo, Magariisa, Diimaa</string>
+    <string name="shah_quiz_3_opt_3" formatted="false">Gurraacha, Adii, Diimaa</string>
+    <string name="shah_quiz_4_q" formatted="false">4. Gabateen tapha Shaah sararoota dhaabbataa fi dalgee meeqaa fi buufataalee dhagaa kaa\'umsaa meeqa qaba?</string>
+    <string name="shah_quiz_4_cat" formatted="false">Keewwata 2 - Sararootaa fi Buufataalee</string>
+    <string name="shah_quiz_4_exp" formatted="false">Akka Keewwata 2.1.3.5 fi 2.1.3.8\'tti sararoota dhaabbataa 8 fi dalgee 8 fi buufataalee 24 qaba.</string>
     <integer name="shah_quiz_4_ans">2</integer>
-    <string name="shah_quiz_4_opt_0">Dhaabbataa 6, dalgee 6 fi buufata 18</string>
-    <string name="shah_quiz_4_opt_1">Dhaabbataa 4, dalgee 4 fi buufata 16</string>
-    <string name="shah_quiz_4_opt_2">Dhaabbataa 8, dalgee 8 fi buufata 24</string>
-    <string name="shah_quiz_4_opt_3">Dhaabbataa 8, dalgee 8 fi buufata 32</string>
-    <string name="shah_quiz_5_q">5. Dorgommii Shaah\'f baay\'inni dhagaa taphaa fi eeggataa walumaagalatti meeqa ta\'uu qaba?</string>
-    <string name="shah_quiz_5_cat">Keewwata 2 - Baay\'ina Dhagaa</string>
-    <string name="shah_quiz_5_exp">Akka Keewwata 2.1.4.3\'tti dhagaa taphaa 24 fi eeggataa 4-4 (8) walumaagalatti dhagaa 32 ta\'uu qabu.</string>
+    <string name="shah_quiz_4_opt_0" formatted="false">Dhaabbataa 6, dalgee 6 fi buufata 18</string>
+    <string name="shah_quiz_4_opt_1" formatted="false">Dhaabbataa 4, dalgee 4 fi buufata 16</string>
+    <string name="shah_quiz_4_opt_2" formatted="false">Dhaabbataa 8, dalgee 8 fi buufata 24</string>
+    <string name="shah_quiz_4_opt_3" formatted="false">Dhaabbataa 8, dalgee 8 fi buufata 32</string>
+    <string name="shah_quiz_5_q" formatted="false">5. Dorgommii Shaah\'f baay\'inni dhagaa taphaa fi eeggataa walumaagalatti meeqa ta\'uu qaba?</string>
+    <string name="shah_quiz_5_cat" formatted="false">Keewwata 2 - Baay\'ina Dhagaa</string>
+    <string name="shah_quiz_5_exp" formatted="false">Akka Keewwata 2.1.4.3\'tti dhagaa taphaa 24 fi eeggataa 4-4 (8) walumaagalatti dhagaa 32 ta\'uu qabu.</string>
     <integer name="shah_quiz_5_ans">3</integer>
-    <string name="shah_quiz_5_opt_0">Taphaa 24 qofa (Ida\'ama 24)</string>
-    <string name="shah_quiz_5_opt_1">Taphaa 30 fi eeggataa 6 (Ida\'ama 36)</string>
-    <string name="shah_quiz_5_opt_2">Taphaa 20 fi eeggataa 4 (Ida\'ama 24)</string>
-    <string name="shah_quiz_5_opt_3">Taphaa 24 fi eeggataa gosa lamaan irraa 4-4 (Ida\'ama 32)</string>
-    <string name="shah_quiz_6_q">6. Bal\'inni dhagaa taphaa Shaah hangam ta\'uu qaba?</string>
-    <string name="shah_quiz_6_cat">Keewwata 2 - Safara Dhagaa</string>
-    <string name="shah_quiz_6_exp">Akka Keewwata 2.1.4.1\'tti bal\'inni dhagaa taphaa Shaah raadiyasii 1 cm caaluu hin qabu.</string>
+    <string name="shah_quiz_5_opt_0" formatted="false">Taphaa 24 qofa (Ida\'ama 24)</string>
+    <string name="shah_quiz_5_opt_1" formatted="false">Taphaa 30 fi eeggataa 6 (Ida\'ama 36)</string>
+    <string name="shah_quiz_5_opt_2" formatted="false">Taphaa 20 fi eeggataa 4 (Ida\'ama 24)</string>
+    <string name="shah_quiz_5_opt_3" formatted="false">Taphaa 24 fi eeggataa gosa lamaan irraa 4-4 (Ida\'ama 32)</string>
+    <string name="shah_quiz_6_q" formatted="false">6. Bal\'inni dhagaa taphaa Shaah hangam ta\'uu qaba?</string>
+    <string name="shah_quiz_6_cat" formatted="false">Keewwata 2 - Safara Dhagaa</string>
+    <string name="shah_quiz_6_exp" formatted="false">Akka Keewwata 2.1.4.1\'tti bal\'inni dhagaa taphaa Shaah raadiyasii 1 cm caaluu hin qabu.</string>
     <integer name="shah_quiz_6_ans">0</integer>
-    <string name="shah_quiz_6_opt_0">Raadiyasii 1 cm kan hin caalle</string>
-    <string name="shah_quiz_6_opt_1">Raadiyasii 3 cm kan hin caalle</string>
-    <string name="shah_quiz_6_opt_2">Raadiyasii 5 cm kan hin caalle</string>
-    <string name="shah_quiz_6_opt_3">Safara hin qabu</string>
-    <string name="shah_quiz_7_q">7. Dorgommii Shaah irratti gareen tokko dorgomtoota meeqa dhiyeessuun dorgomsiisa?</string>
-    <string name="shah_quiz_7_cat">Keewwata 3 - Baay\'ina Dorgomtootaa</string>
-    <string name="shah_quiz_7_exp">Akka Keewwata 3.1.1\'tti gareen tokko dorgomaa tokko (1) qofa dhiyeessuun dorgomsiisa.</string>
+    <string name="shah_quiz_6_opt_0" formatted="false">Raadiyasii 1 cm kan hin caalle</string>
+    <string name="shah_quiz_6_opt_1" formatted="false">Raadiyasii 3 cm kan hin caalle</string>
+    <string name="shah_quiz_6_opt_2" formatted="false">Raadiyasii 5 cm kan hin caalle</string>
+    <string name="shah_quiz_6_opt_3" formatted="false">Safara hin qabu</string>
+    <string name="shah_quiz_7_q" formatted="false">7. Dorgommii Shaah irratti gareen tokko dorgomtoota meeqa dhiyeessuun dorgomsiisa?</string>
+    <string name="shah_quiz_7_cat" formatted="false">Keewwata 3 - Baay\'ina Dorgomtootaa</string>
+    <string name="shah_quiz_7_exp" formatted="false">Akka Keewwata 3.1.1\'tti gareen tokko dorgomaa tokko (1) qofa dhiyeessuun dorgomsiisa.</string>
     <integer name="shah_quiz_7_ans">1</integer>
-    <string name="shah_quiz_7_opt_0">Dorgomtoota 2</string>
-    <string name="shah_quiz_7_opt_1">Dorgomaa 1 qofa</string>
-    <string name="shah_quiz_7_opt_2">Dorgomtoota 3</string>
-    <string name="shah_quiz_7_opt_3">Akka fedhii gareetti</string>
-    <string name="shah_quiz_8_q">8. Baay\'innii fi gaheen abbootii murtii dorgommii Shaah hooggananii meeqa?</string>
-    <string name="shah_quiz_8_cat">Keewwata 8 - Abbootii Murtii</string>
-    <string name="shah_quiz_8_exp">Akka Keewwata 8\'tti dorgommicha kan hoogganan Abbaa Murtii Ol\'aanaa 1 fi Galmeessaa Qabxii 1 (ida\'ama 2) dha.</string>
+    <string name="shah_quiz_7_opt_0" formatted="false">Dorgomtoota 2</string>
+    <string name="shah_quiz_7_opt_1" formatted="false">Dorgomaa 1 qofa</string>
+    <string name="shah_quiz_7_opt_2" formatted="false">Dorgomtoota 3</string>
+    <string name="shah_quiz_7_opt_3" formatted="false">Akka fedhii gareetti</string>
+    <string name="shah_quiz_8_q" formatted="false">8. Baay\'innii fi gaheen abbootii murtii dorgommii Shaah hooggananii meeqa?</string>
+    <string name="shah_quiz_8_cat" formatted="false">Keewwata 8 - Abbootii Murtii</string>
+    <string name="shah_quiz_8_exp" formatted="false">Akka Keewwata 8\'tti dorgommicha kan hoogganan Abbaa Murtii Ol\'aanaa 1 fi Galmeessaa Qabxii 1 (ida\'ama 2) dha.</string>
     <integer name="shah_quiz_8_ans">2</integer>
-    <string name="shah_quiz_8_opt_0">Abbaa Murtii Ol\'aanaa 1 qofa</string>
-    <string name="shah_quiz_8_opt_1">Abbaa Murtii Ol\'aanaa 1 fi Sararaa 2 (Ida\'ama 3)</string>
-    <string name="shah_quiz_8_opt_2">Abbaa Murtii Ol\'aanaa 1 fi Galmeessaa Qabxii 1 (Ida\'ama 2)</string>
-    <string name="shah_quiz_8_opt_3">Ol\'aanaa 2 fi Galmeessaa 2 (Ida\'ama 4)</string>
-    <string name="shah_quiz_9_q">9. Abbaan Murtii Ol\'aanaa fi Galmeessaan Qabxii dorgommiin jalqabamuun daqiiqaa meeqa dura bakka dorgommiitti argamuu qabu?</string>
-    <string name="shah_quiz_9_cat">Keewwata 8 - Dirqama Abbootii Murtii</string>
-    <string name="shah_quiz_9_exp">Akka Keewwata 8.1.1 fi 8.2.1\'tti dorgommiin jalqabamuun daqiiqaa 30 dura argamuu qabu.</string>
+    <string name="shah_quiz_8_opt_0" formatted="false">Abbaa Murtii Ol\'aanaa 1 qofa</string>
+    <string name="shah_quiz_8_opt_1" formatted="false">Abbaa Murtii Ol\'aanaa 1 fi Sararaa 2 (Ida\'ama 3)</string>
+    <string name="shah_quiz_8_opt_2" formatted="false">Abbaa Murtii Ol\'aanaa 1 fi Galmeessaa Qabxii 1 (Ida\'ama 2)</string>
+    <string name="shah_quiz_8_opt_3" formatted="false">Ol\'aanaa 2 fi Galmeessaa 2 (Ida\'ama 4)</string>
+    <string name="shah_quiz_9_q" formatted="false">9. Abbaan Murtii Ol\'aanaa fi Galmeessaan Qabxii dorgommiin jalqabamuun daqiiqaa meeqa dura bakka dorgommiitti argamuu qabu?</string>
+    <string name="shah_quiz_9_cat" formatted="false">Keewwata 8 - Dirqama Abbootii Murtii</string>
+    <string name="shah_quiz_9_exp" formatted="false">Akka Keewwata 8.1.1 fi 8.2.1\'tti dorgommiin jalqabamuun daqiiqaa 30 dura argamuu qabu.</string>
     <integer name="shah_quiz_9_ans">0</integer>
-    <string name="shah_quiz_9_opt_0">Daqiiqaa 30 dura</string>
-    <string name="shah_quiz_9_opt_1">Daqiiqaa 15 dura</string>
-    <string name="shah_quiz_9_opt_2">Daqiiqaa 10 dura</string>
-    <string name="shah_quiz_9_opt_3">Sa\'aatii 1 dura</string>
-    <string name="shah_quiz_10_q">10. Dorgommii Shaah irratti adeemsa dhagaa kaa\'uu jalqabuuf abbaa murtiitiin carraan kan buufamu marsaa kam irratti?</string>
-    <string name="shah_quiz_10_cat">Keewwata 4 - Carraa Buusuu</string>
-    <string name="shah_quiz_10_exp">Akka Keewwata 4.3\'tti carraan kan buufamu marsaa 1ffaa fi 3ffaa irratti.</string>
+    <string name="shah_quiz_9_opt_0" formatted="false">Daqiiqaa 30 dura</string>
+    <string name="shah_quiz_9_opt_1" formatted="false">Daqiiqaa 15 dura</string>
+    <string name="shah_quiz_9_opt_2" formatted="false">Daqiiqaa 10 dura</string>
+    <string name="shah_quiz_9_opt_3" formatted="false">Sa\'aatii 1 dura</string>
+    <string name="shah_quiz_10_q" formatted="false">10. Dorgommii Shaah irratti adeemsa dhagaa kaa\'uu jalqabuuf abbaa murtiitiin carraan kan buufamu marsaa kam irratti?</string>
+    <string name="shah_quiz_10_cat" formatted="false">Keewwata 4 - Carraa Buusuu</string>
+    <string name="shah_quiz_10_exp" formatted="false">Akka Keewwata 4.3\'tti carraan kan buufamu marsaa 1ffaa fi 3ffaa irratti.</string>
     <integer name="shah_quiz_10_ans">3</integer>
-    <string name="shah_quiz_10_opt_0">Marsaa hundumaa irratti</string>
-    <string name="shah_quiz_10_opt_1">Marsaa 1ffaa qofa irratti</string>
-    <string name="shah_quiz_10_opt_2">Marsaa 2ffaa fi 3ffaa irratti</string>
-    <string name="shah_quiz_10_opt_3">Marsaa 1ffaa fi 3ffaa irratti</string>
-    <string name="shah_quiz_11_q">11. Taphattoonni lamaanuu dhagaa 12-12 gabatee irra erga kaa\'anii booda, lamaanuu tarree 3 yoo hin galchine, dursa dhagaa morkataa 1 kaasuun tapha kan jalqabu eenyu?</string>
-    <string name="shah_quiz_11_cat">Keewwata 4 - Jalqabbii Taphaa</string>
-    <string name="shah_quiz_11_exp">Akka Keewwata 4.8\'tti lamaanuu tarree 3 yoo hin galchine, taphataa carraan dhagaa kaa\'uu hin baaneef tapha jalqaba.</string>
+    <string name="shah_quiz_10_opt_0" formatted="false">Marsaa hundumaa irratti</string>
+    <string name="shah_quiz_10_opt_1" formatted="false">Marsaa 1ffaa qofa irratti</string>
+    <string name="shah_quiz_10_opt_2" formatted="false">Marsaa 2ffaa fi 3ffaa irratti</string>
+    <string name="shah_quiz_10_opt_3" formatted="false">Marsaa 1ffaa fi 3ffaa irratti</string>
+    <string name="shah_quiz_11_q" formatted="false">11. Taphattoonni lamaanuu dhagaa 12-12 gabatee irra erga kaa\'anii booda, lamaanuu tarree 3 yoo hin galchine, dursa dhagaa morkataa 1 kaasuun tapha kan jalqabu eenyu?</string>
+    <string name="shah_quiz_11_cat" formatted="false">Keewwata 4 - Jalqabbii Taphaa</string>
+    <string name="shah_quiz_11_exp" formatted="false">Akka Keewwata 4.8\'tti lamaanuu tarree 3 yoo hin galchine, taphataa carraan dhagaa kaa\'uu hin baaneef tapha jalqaba.</string>
     <integer name="shah_quiz_11_ans">1</integer>
-    <string name="shah_quiz_11_opt_0">Taphataa carraan dhagaa kaa\'uu ba\'eef</string>
-    <string name="shah_quiz_11_opt_1">Taphataa carraan dhagaa kaa\'uu HIN baaneef (isa lammaffaa kaa\'e)</string>
-    <string name="shah_quiz_11_opt_2">Carraan irra deebi\'amee buufama</string>
-    <string name="shah_quiz_11_opt_3">Taphataa abbaan murtii filate</string>
-    <string name="shah_quiz_12_q">12. Jalqaba taphaa irratti taphataan 1ffaan dhagaa 1 erga kaasee fi inni 2ffaanis dhagaa 1 erga kaasee booda, dursa dhagaa gara bakka banaatti dhiibee kan taphatu eenyu?</string>
-    <string name="shah_quiz_12_cat">Keewwata 4 - Adeemsa Taphaa</string>
-    <string name="shah_quiz_12_exp">Akka Keewwata 4.9\'tti lamaanuu dhagaa tokko tokko erga kaasanii booda, taphataan dursa dhagaa kaase dhagaa ofii dhiibee taphata.</string>
+    <string name="shah_quiz_11_opt_0" formatted="false">Taphataa carraan dhagaa kaa\'uu ba\'eef</string>
+    <string name="shah_quiz_11_opt_1" formatted="false">Taphataa carraan dhagaa kaa\'uu HIN baaneef (isa lammaffaa kaa\'e)</string>
+    <string name="shah_quiz_11_opt_2" formatted="false">Carraan irra deebi\'amee buufama</string>
+    <string name="shah_quiz_11_opt_3" formatted="false">Taphataa abbaan murtii filate</string>
+    <string name="shah_quiz_12_q" formatted="false">12. Jalqaba taphaa irratti taphataan 1ffaan dhagaa 1 erga kaasee fi inni 2ffaanis dhagaa 1 erga kaasee booda, dursa dhagaa gara bakka banaatti dhiibee kan taphatu eenyu?</string>
+    <string name="shah_quiz_12_cat" formatted="false">Keewwata 4 - Adeemsa Taphaa</string>
+    <string name="shah_quiz_12_exp" formatted="false">Akka Keewwata 4.9\'tti lamaanuu dhagaa tokko tokko erga kaasanii booda, taphataan dursa dhagaa kaase dhagaa ofii dhiibee taphata.</string>
     <integer name="shah_quiz_12_ans">2</integer>
-    <string name="shah_quiz_12_opt_0">Taphataa carraan ba\'eef</string>
-    <string name="shah_quiz_12_opt_1">Taphataa lammaffaa dhagaa kaase</string>
-    <string name="shah_quiz_12_opt_2">Taphataa dursa dhagaa kaase</string>
-    <string name="shah_quiz_12_opt_3">Kamiyyuu jalqabuu danda\'a</string>
-    <string name="shah_quiz_13_q">13. Akka seera Otoomaatikiin battaluma moo\'uu (Deddeebi\'aa Tarree 3) tti taphataan tokko battaluma injifataa kan ta\'u yoomi?</string>
-    <string name="shah_quiz_13_cat">Keewwata 4 - Seera Otoomaatikii</string>
-    <string name="shah_quiz_13_exp">Dhagaan tokko buufata lama gidduutti deddeebi\'uun bakka lamaanuu tarree 3 hojjechuu yoo danda\'e hundumaa nyaachuu waan danda\'uuf battaluma seera Otoomaatikiitiin moo\'a.</string>
+    <string name="shah_quiz_12_opt_0" formatted="false">Taphataa carraan ba\'eef</string>
+    <string name="shah_quiz_12_opt_1" formatted="false">Taphataa lammaffaa dhagaa kaase</string>
+    <string name="shah_quiz_12_opt_2" formatted="false">Taphataa dursa dhagaa kaase</string>
+    <string name="shah_quiz_12_opt_3" formatted="false">Kamiyyuu jalqabuu danda\'a</string>
+    <string name="shah_quiz_13_q" formatted="false">13. Akka seera Otoomaatikiin battaluma moo\'uu (Deddeebi\'aa Tarree 3) tti taphataan tokko battaluma injifataa kan ta\'u yoomi?</string>
+    <string name="shah_quiz_13_cat" formatted="false">Keewwata 4 - Seera Otoomaatikii</string>
+    <string name="shah_quiz_13_exp" formatted="false">Dhagaan tokko buufata lama gidduutti deddeebi\'uun bakka lamaanuu tarree 3 hojjechuu yoo danda\'e hundumaa nyaachuu waan danda\'uuf battaluma seera Otoomaatikiitiin moo\'a.</string>
     <integer name="shah_quiz_13_ans">3</integer>
-    <string name="shah_quiz_13_opt_0">Dhagaa 3 yoo nyaatu</string>
-    <string name="shah_quiz_13_opt_1">Morkataan dhagaa 1 yoo kaasu</string>
-    <string name="shah_quiz_13_opt_2">Dhagaa 12\'n gabatee irra yoo kaa\'u</string>
-    <string name="shah_quiz_13_opt_3">Dhagaan tokko yoo dhiibamu buufata lama gidduutti deddeebi\'uun tarree 3 hojjechuu yoo danda\'e (ykn tarree dachaa)</string>
-    <string name="shah_quiz_14_q">14. Taphataan tokko dhagaa 2 osoo hin nyaatin karaa morkataa yoo cufee fi dhagaa 1 kaaseefii ammas cufaa yoo ta\'e maaltu godhama?</string>
-    <string name="shah_quiz_14_cat">Keewwata 4 - Seera Cufuu fi Banuu</string>
-    <string name="shah_quiz_14_exp">Akka seera cufuu fi banuutti dhagaan 1ffaan ka\'ee yoo hin banamne yeroo 2ffaaf dhagaan 1 ni ka\'a; isa 2ffaatiinis cufaa yoo ta\'e taphataan itti cufame ni moo\'ama.</string>
+    <string name="shah_quiz_13_opt_0" formatted="false">Dhagaa 3 yoo nyaatu</string>
+    <string name="shah_quiz_13_opt_1" formatted="false">Morkataan dhagaa 1 yoo kaasu</string>
+    <string name="shah_quiz_13_opt_2" formatted="false">Dhagaa 12\'n gabatee irra yoo kaa\'u</string>
+    <string name="shah_quiz_13_opt_3" formatted="false">Dhagaan tokko yoo dhiibamu buufata lama gidduutti deddeebi\'uun tarree 3 hojjechuu yoo danda\'e (ykn tarree dachaa)</string>
+    <string name="shah_quiz_14_q" formatted="false">14. Taphataan tokko dhagaa 2 osoo hin nyaatin karaa morkataa yoo cufee fi dhagaa 1 kaaseefii ammas cufaa yoo ta\'e maaltu godhama?</string>
+    <string name="shah_quiz_14_cat" formatted="false">Keewwata 4 - Seera Cufuu fi Banuu</string>
+    <string name="shah_quiz_14_exp" formatted="false">Akka seera cufuu fi banuutti dhagaan 1ffaan ka\'ee yoo hin banamne yeroo 2ffaaf dhagaan 1 ni ka\'a; isa 2ffaatiinis cufaa yoo ta\'e taphataan itti cufame ni moo\'ama.</string>
     <integer name="shah_quiz_14_ans">0</integer>
-    <string name="shah_quiz_14_opt_0">Yeroo 2ffaaf dhagaa 1 akka kaasu ajajama; yoo banameef ni taphata, ammas cufaa yoo ta\'e garuu inni itti cufame moo\'amuu isaa taphni xumurama</string>
-    <string name="shah_quiz_14_opt_1">Taphni battaluma dhaabbata</string>
-    <string name="shah_quiz_14_opt_2">Jalqaba irraa deebi\'amee eegalama</string>
-    <string name="shah_quiz_14_opt_3">Taphataan cufe ni adabama</string>
-    <string name="shah_quiz_15_q">15. Taphataan tokko karaa morkataa guutummaatti cufee cufaadhaan moo\'uuf yoo xiqqaate dhagaa meeqa nyaachuu qaba?</string>
-    <string name="shah_quiz_15_cat">Keewwata 4 - Cufaadhaan Moo\'uu (4.18)</string>
-    <string name="shah_quiz_15_exp">Akka Keewwata 4.18\'tti taphataan tokko dhagaa 2 fi isaa ol nyaatee karaa morkataa yoo cufe injifannoon xumura.</string>
+    <string name="shah_quiz_14_opt_0" formatted="false">Yeroo 2ffaaf dhagaa 1 akka kaasu ajajama; yoo banameef ni taphata, ammas cufaa yoo ta\'e garuu inni itti cufame moo\'amuu isaa taphni xumurama</string>
+    <string name="shah_quiz_14_opt_1" formatted="false">Taphni battaluma dhaabbata</string>
+    <string name="shah_quiz_14_opt_2" formatted="false">Jalqaba irraa deebi\'amee eegalama</string>
+    <string name="shah_quiz_14_opt_3" formatted="false">Taphataan cufe ni adabama</string>
+    <string name="shah_quiz_15_q" formatted="false">15. Taphataan tokko karaa morkataa guutummaatti cufee cufaadhaan moo\'uuf yoo xiqqaate dhagaa meeqa nyaachuu qaba?</string>
+    <string name="shah_quiz_15_cat" formatted="false">Keewwata 4 - Cufaadhaan Moo\'uu (4.18)</string>
+    <string name="shah_quiz_15_exp" formatted="false">Akka Keewwata 4.18\'tti taphataan tokko dhagaa 2 fi isaa ol nyaatee karaa morkataa yoo cufe injifannoon xumura.</string>
     <integer name="shah_quiz_15_ans">2</integer>
-    <string name="shah_quiz_15_opt_0">Osoo homaa hin nyaatin</string>
-    <string name="shah_quiz_15_opt_1">Dhagaa 1 qofa</string>
-    <string name="shah_quiz_15_opt_2">Dhagaa lamaa fi isaa ol (2+)</string>
-    <string name="shah_quiz_15_opt_3">Dhagaa 6</string>
-    <string name="shah_quiz_16_q">16. Adeemsa tapha Shaah keessatti taphataan tokko dabaree isaatti deemuuf daangaan yeroo yaaduu kennameef meeqa?</string>
-    <string name="shah_quiz_16_cat">Keewwata 4 - Yeroo Yaaduu (4.21)</string>
-    <string name="shah_quiz_16_exp">Akka Keewwata 4.21\'tti daangaan yeroo yaaduu tarkaanfii tokkoof sekondii 30 qofa.</string>
+    <string name="shah_quiz_15_opt_0" formatted="false">Osoo homaa hin nyaatin</string>
+    <string name="shah_quiz_15_opt_1" formatted="false">Dhagaa 1 qofa</string>
+    <string name="shah_quiz_15_opt_2" formatted="false">Dhagaa lamaa fi isaa ol (2+)</string>
+    <string name="shah_quiz_15_opt_3" formatted="false">Dhagaa 6</string>
+    <string name="shah_quiz_16_q" formatted="false">16. Adeemsa tapha Shaah keessatti taphataan tokko dabaree isaatti deemuuf daangaan yeroo yaaduu kennameef meeqa?</string>
+    <string name="shah_quiz_16_cat" formatted="false">Keewwata 4 - Yeroo Yaaduu (4.21)</string>
+    <string name="shah_quiz_16_exp" formatted="false">Akka Keewwata 4.21\'tti daangaan yeroo yaaduu tarkaanfii tokkoof sekondii 30 qofa.</string>
     <integer name="shah_quiz_16_ans">1</integer>
-    <string name="shah_quiz_16_opt_0">Sekondii 15</string>
-    <string name="shah_quiz_16_opt_1">Sekondii 30</string>
-    <string name="shah_quiz_16_opt_2">Daqiiqaa 1</string>
-    <string name="shah_quiz_16_opt_3">Daqiiqaa 2</string>
-    <string name="shah_quiz_17_q">17. Gabatee taphaa irratti dhagaan taphataa tokkoo meeqa gadi yoo hafu taphni injifannoo morkataatiin xumurama?</string>
-    <string name="shah_quiz_17_cat">Keewwata 4 - Xumura Taphaa (4.19)</string>
-    <string name="shah_quiz_17_exp">Akka Keewwata 4.19\'tti dhagaan taphataa tokkoo 3 gadi yoo hafu tarree 3 hojjechuu waan hin dandeenyeef taphni ni xumurama.</string>
+    <string name="shah_quiz_16_opt_0" formatted="false">Sekondii 15</string>
+    <string name="shah_quiz_16_opt_1" formatted="false">Sekondii 30</string>
+    <string name="shah_quiz_16_opt_2" formatted="false">Daqiiqaa 1</string>
+    <string name="shah_quiz_16_opt_3" formatted="false">Daqiiqaa 2</string>
+    <string name="shah_quiz_17_q" formatted="false">17. Gabatee taphaa irratti dhagaan taphataa tokkoo meeqa gadi yoo hafu taphni injifannoo morkataatiin xumurama?</string>
+    <string name="shah_quiz_17_cat" formatted="false">Keewwata 4 - Xumura Taphaa (4.19)</string>
+    <string name="shah_quiz_17_exp" formatted="false">Akka Keewwata 4.19\'tti dhagaan taphataa tokkoo 3 gadi yoo hafu tarree 3 hojjechuu waan hin dandeenyeef taphni ni xumurama.</string>
     <integer name="shah_quiz_17_ans">0</integer>
-    <string name="shah_quiz_17_opt_0">3 gadi (2 yoo hafu)</string>
-    <string name="shah_quiz_17_opt_1">4 gadi</string>
-    <string name="shah_quiz_17_opt_2">5 gadi</string>
-    <string name="shah_quiz_17_opt_3">Hundumtuu yoo dhuman qofa</string>
-    <string name="shah_quiz_18_q">18. Xumura marsaa tapha Shaah tokkoon tokkoo booda taphattootaaf yeroo boqonnaa daqiiqaa meeqatu kennama?</string>
-    <string name="shah_quiz_18_cat">Keewwata 4 - Yeroo Boqonnaa (4.22)</string>
-    <string name="shah_quiz_18_exp">Akka Keewwata 4.22\'tti xumura marsaa tokkoon tokkoo booda boqonnaa daqiiqaa 5 tu kennama.</string>
+    <string name="shah_quiz_17_opt_0" formatted="false">3 gadi (2 yoo hafu)</string>
+    <string name="shah_quiz_17_opt_1" formatted="false">4 gadi</string>
+    <string name="shah_quiz_17_opt_2" formatted="false">5 gadi</string>
+    <string name="shah_quiz_17_opt_3" formatted="false">Hundumtuu yoo dhuman qofa</string>
+    <string name="shah_quiz_18_q" formatted="false">18. Xumura marsaa tapha Shaah tokkoon tokkoo booda taphattootaaf yeroo boqonnaa daqiiqaa meeqatu kennama?</string>
+    <string name="shah_quiz_18_cat" formatted="false">Keewwata 4 - Yeroo Boqonnaa (4.22)</string>
+    <string name="shah_quiz_18_exp" formatted="false">Akka Keewwata 4.22\'tti xumura marsaa tokkoon tokkoo booda boqonnaa daqiiqaa 5 tu kennama.</string>
     <integer name="shah_quiz_18_ans">3</integer>
-    <string name="shah_quiz_18_opt_0">Daqiiqaa 2</string>
-    <string name="shah_quiz_18_opt_1">Daqiiqaa 15</string>
-    <string name="shah_quiz_18_opt_2">Daqiiqaa 10</string>
-    <string name="shah_quiz_18_opt_3">Daqiiqaa 5</string>
-    <string name="shah_quiz_19_q">19. Dorgommii Shaah irratti dorgomaan tokko sa\'aatii taphaatti bakka dorgommiitti yoo hin argamne daqiiqaa meeqa eegamee forfeedhaan moo\'ama?</string>
-    <string name="shah_quiz_19_cat">Keewwata 5 - Qabxii fi Forfee</string>
-    <string name="shah_quiz_19_exp">Akka Keewwata 5.2.2\'tti daqiiqaa 10 eegamee yoo hin argamne forfeedhaan moo\'amee morkataaf qabxii 2 kennama.</string>
+    <string name="shah_quiz_18_opt_0" formatted="false">Daqiiqaa 2</string>
+    <string name="shah_quiz_18_opt_1" formatted="false">Daqiiqaa 15</string>
+    <string name="shah_quiz_18_opt_2" formatted="false">Daqiiqaa 10</string>
+    <string name="shah_quiz_18_opt_3" formatted="false">Daqiiqaa 5</string>
+    <string name="shah_quiz_19_q" formatted="false">19. Dorgommii Shaah irratti dorgomaan tokko sa\'aatii taphaatti bakka dorgommiitti yoo hin argamne daqiiqaa meeqa eegamee forfeedhaan moo\'ama?</string>
+    <string name="shah_quiz_19_cat" formatted="false">Keewwata 5 - Qabxii fi Forfee</string>
+    <string name="shah_quiz_19_exp" formatted="false">Akka Keewwata 5.2.2\'tti daqiiqaa 10 eegamee yoo hin argamne forfeedhaan moo\'amee morkataaf qabxii 2 kennama.</string>
     <integer name="shah_quiz_19_ans">2</integer>
-    <string name="shah_quiz_19_opt_0">Daqiiqaa 5 eegamee</string>
-    <string name="shah_quiz_19_opt_1">Daqiiqaa 15 eegamee</string>
-    <string name="shah_quiz_19_opt_2">Daqiiqaa 10 eegamee</string>
-    <string name="shah_quiz_19_opt_3">Daqiiqaa 30 eegamee</string>
-    <string name="shah_quiz_20_q">20. Akka seera adabbii dorgommii Shaah\'tti taphataan tokko balleessaa meeqaffaa irratti Kaardii Keelloo fi Kaardii Diimaa kennamaaf?</string>
-    <string name="shah_quiz_20_cat">Keewwata 6 - Adabbiiwwan</string>
-    <string name="shah_quiz_20_exp">Balleessaan 1ffaa–3ffaa galmaa\'anii, balleessaa 4ffaa irratti Kaardii Keelloo, 5ffaa irratti Kaardii Diimaa kennama.</string>
+    <string name="shah_quiz_19_opt_0" formatted="false">Daqiiqaa 5 eegamee</string>
+    <string name="shah_quiz_19_opt_1" formatted="false">Daqiiqaa 15 eegamee</string>
+    <string name="shah_quiz_19_opt_2" formatted="false">Daqiiqaa 10 eegamee</string>
+    <string name="shah_quiz_19_opt_3" formatted="false">Daqiiqaa 30 eegamee</string>
+    <string name="shah_quiz_20_q" formatted="false">20. Akka seera adabbii dorgommii Shaah\'tti taphataan tokko balleessaa meeqaffaa irratti Kaardii Keelloo fi Kaardii Diimaa kennamaaf?</string>
+    <string name="shah_quiz_20_cat" formatted="false">Keewwata 6 - Adabbiiwwan</string>
+    <string name="shah_quiz_20_exp" formatted="false">Balleessaan 1ffaa–3ffaa galmaa\'anii, balleessaa 4ffaa irratti Kaardii Keelloo, 5ffaa irratti Kaardii Diimaa kennama.</string>
     <integer name="shah_quiz_20_ans">1</integer>
-    <string name="shah_quiz_20_opt_0">2ffaa Keelloo, 3ffaa Diimaa</string>
-    <string name="shah_quiz_20_opt_1">Balleessaa 4ffaa irratti Kaardii Keelloo, 5ffaa irratti Kaardii Diimaa</string>
-    <string name="shah_quiz_20_opt_2">3ffaa Keelloo, 4ffaa Diimaa</string>
-    <string name="shah_quiz_20_opt_3">1ffaa Keelloo, 2ffaa Diimaa</string>
+    <string name="shah_quiz_20_opt_0" formatted="false">2ffaa Keelloo, 3ffaa Diimaa</string>
+    <string name="shah_quiz_20_opt_1" formatted="false">Balleessaa 4ffaa irratti Kaardii Keelloo, 5ffaa irratti Kaardii Diimaa</string>
+    <string name="shah_quiz_20_opt_2" formatted="false">3ffaa Keelloo, 4ffaa Diimaa</string>
+    <string name="shah_quiz_20_opt_3" formatted="false">1ffaa Keelloo, 2ffaa Diimaa</string>
 </resources>
