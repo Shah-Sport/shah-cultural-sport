@@ -1,0 +1,151 @@
+name: Build, Auto-Unzip & Sign Shah Android Release (.aab & .apk)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+# Workflow Read & Write permissions (Allows automatic ZIP extraction commit & GitHub Release creation)
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  build-and-sign-shah:
+    runs-on: ubuntu-latest
+
+    env:
+      KEYSTORE_FILE: release.keystore
+      # Supports reading from either Repository/Organization Secrets OR Variables
+      KEY_ALIAS: ${{ secrets.KEY_ALIAS || vars.KEY_ALIAS }}
+      KEY_PASSWORD: ${{ secrets.KEY_PASSWORD || vars.KEY_PASSWORD }}
+      STORE_PASSWORD: ${{ secrets.STORE_PASSWORD || vars.STORE_PASSWORD }}
+      ADMOB_APP_ID: ${{ secrets.ADMOB_APP_ID || vars.ADMOB_APP_ID }}
+
+    steps:
+      - name: 1. Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 2. Auto-Detect & Extract Project ZIP (If Uploaded as .zip)
+        run: |
+          if [ ! -f "settings.gradle.kts" ]; then
+            echo "settings.gradle.kts not found at root. Searching for uploaded .zip archive..."
+            ZIP_FILE=$(find . -maxdepth 2 -name "*.zip" | head -n 1)
+            if [ -n "$ZIP_FILE" ]; then
+              echo "Found archive: $ZIP_FILE Рђћ extracting project files..."
+              unzip -o "$ZIP_FILE" -d .
+              # If the zip extracted into a subfolder, move contents to root
+              if [ ! -f "settings.gradle.kts" ]; then
+                SUB_SETTINGS=$(find . -maxdepth 3 -name "settings.gradle.kts" | head -n 1)
+                if [ -n "$SUB_SETTINGS" ]; then
+                  SUB_DIR=$(dirname "$SUB_SETTINGS")
+                  cp -rn "$SUB_DIR"/. .
+                fi
+              fi
+              # Commit extracted files back to the repository so GitHub Pages (/docs) and code tree work natively
+              git config user.name "github-actions[bot]"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git add .
+              git commit -m "Auto-extract Shah Native Kotlin project files from uploaded ZIP [skip ci]" || true
+              git push || true
+            else
+              echo "::error::Neither settings.gradle.kts nor any .zip file was found in the repository!"
+              exit 1
+            fi
+          else
+            echo "Project files are already extracted at repository root."
+          fi
+
+      - name: 3. Set up JDK 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: 4. Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: 5. Setup Gradle 8.9 with Dependency Caching
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: 6. Prepare Production Signing Keystore (PKCS12 / 2048-bit RSA)
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: |
+          if [ -z "$KEY_ALIAS" ] || [ -z "$KEY_PASSWORD" ] || [ -z "$STORE_PASSWORD" ]; then
+            echo "::error::Missing KEY_ALIAS, KEY_PASSWORD, or STORE_PASSWORD in GitHub Secrets/Variables!"
+            exit 1
+          fi
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "Decoding existing release.keystore from KEYSTORE_BASE64 secret..."
+            echo "$KEYSTORE_BASE64" | base64 --decode > release.keystore
+          else
+            echo "Generating production PKCS12 release.keystore using configured Secrets..."
+            keytool -genkeypair -v \
+              -keystore release.keystore \
+              -storetype PKCS12 \
+              -alias "$KEY_ALIAS" \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -storepass "$STORE_PASSWORD" \
+              -keypass "$KEY_PASSWORD" \
+              -dname "CN=Ethiopian Cultural Sports Federation, OU=Cultural Sports, O=ECSF, L=Addis Ababa, ST=Addis Ababa, C=ET"
+          fi
+
+      - name: 7. Build Signed Release Android App Bundle (.aab) for Google Play Console
+        run: gradle :app:bundleRelease --no-daemon --stacktrace
+
+      - name: 8. Build Signed Release APK (.apk) for Direct Phone Installation
+        run: gradle :app:assembleRelease --no-daemon --stacktrace
+
+      - name: 9. Rename Output Files Clearly
+        run: |
+          mkdir -p release_outputs
+          cp app/build/outputs/bundle/release/*.aab release_outputs/Shah-v1.0.0-PlayStore-Release.aab
+          cp app/build/outputs/apk/release/*.apk release_outputs/Shah-v1.0.0-Phone-Install.apk
+
+      - name: 10. Upload Signed .aab Artifact (For Google Play Console)
+        uses: actions/upload-artifact@v4
+        with:
+          name: 1-Shah-GooglePlay-Release-AAB
+          path: release_outputs/Shah-v1.0.0-PlayStore-Release.aab
+          retention-days: 90
+
+      - name: 11. Upload Signed .apk Artifact (For Phone Testing)
+        uses: actions/upload-artifact@v4
+        with:
+          name: 2-Shah-Phone-Install-Release-APK
+          path: release_outputs/Shah-v1.0.0-Phone-Install.apk
+          retention-days: 90
+
+      - name: 12. Upload Keystore Backup & Play Store Graphics
+        uses: actions/upload-artifact@v4
+        with:
+          name: 3-Shah-Keystore-And-PlayStore-Assets
+          path: |
+            release.keystore
+            playstore_assets/*
+          retention-days: 90
+
+      - name: 13. Publish Direct Downloadable .aab & .apk to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.0-build.${{ github.run_number }}
+          name: "рѕ╗рѕЁ (Shah Cultural Sport Game) v1.0.0 Рђћ Build #${{ github.run_number }}"
+          body: |
+            ### ­ЪЈє рІерѕ╗рѕЁ рЅБрѕЁрѕІрІі рѕхрЇќрѕГрЅх рїерІІрЅ│ (100% Native Kotlin Release)
+            - **Google Play Console Bundle (`.aab`)**: `Shah-v1.0.0-PlayStore-Release.aab`
+            - **Direct Phone Installer (`.apk`)**: `Shah-v1.0.0-Phone-Install.apk`
+            - **Package ID**: `eth.culturalsports.shah` (Version 1.0.0 / Code 1)
+          files: |
+            release_outputs/Shah-v1.0.0-PlayStore-Release.aab
+            release_outputs/Shah-v1.0.0-Phone-Install.apk
+            playstore_assets/ic_launcher_playstore_512x512.png
+            playstore_assets/feature_graphic_1024x500.png
+          draft: false
+          prerelease: false
