@@ -33,7 +33,6 @@ jobs:
       - name: 2. Auto-Detect & Extract Uploaded .zip (Preserving Workflow)
         run: |
           set -e
-          # Save current workflow in memory so unzip can NEVER overwrite it
           mkdir -p /tmp/workflow_backup
           cp -f .github/workflows/*.yml /tmp/workflow_backup/ 2>/dev/null || true
 
@@ -55,7 +54,6 @@ jobs:
                       continue
                   zf.extract(member, extract_tmp)
 
-          # Locate directory containing settings.gradle.kts
           src_root = extract_tmp
           for root, dirs, files in os.walk(extract_tmp):
               if "settings.gradle.kts" in files:
@@ -75,7 +73,6 @@ jobs:
           PYUNZIP
           fi
 
-          # Restore workflow backup just in case
           mkdir -p .github/workflows
           cp -f /tmp/workflow_backup/*.yml .github/workflows/ 2>/dev/null || true
 
@@ -85,12 +82,30 @@ jobs:
             exit 1
           fi
 
-      - name: 3. Sanitize Android XML Resources & Gradle Config for AAPT2
+      - name: 3. Sanitize Kotlin Strings, Android XML Resources, Gradle Config & Clean README
         run: |
           python3 - << 'PYEOF'
           import glob, re, os
 
-          # 1. Add formatted="false" to all string resources so % symbols pass AAPT2 strictly
+          # 1. Fix any raw newlines inside double-quoted strings in ShahViewModel.kt
+          vm_path = "app/src/main/java/eth/culturalsports/shah/viewmodel/ShahViewModel.kt"
+          if os.path.exists(vm_path):
+              with open(vm_path, "r", encoding="utf-8") as f:
+                  vm = f.read()
+              vm = vm.replace('var fullMsg = reasonText + "\n\n" + tr(', 'var fullMsg = reasonText + "\\n\\n" + tr(')
+              vm = vm.replace('fullMsg += "\n\n" + tr(R.string.shah_champ_msg)', 'fullMsg += "\\n\\n" + tr(R.string.shah_champ_msg)')
+              vm = vm.replace('mapOf("sc" to sc.toString(), "pct" to pct.toString())) + "\n\n" + rankMsg,', 'mapOf("sc" to sc.toString(), "pct" to pct.toString())) + "\\n\\n" + rankMsg,')
+              vm = vm.replace('val shareText = tr(R.string.shah_share_app_message) +\n                "\nhttps://play.google.com/store/apps/details?id=${context.packageName}"', 'val shareText = tr(R.string.shah_share_app_message) + "\\nhttps://play.google.com/store/apps/details?id=${context.packageName}"')
+              vm = re.sub(
+                  r'val deviceFooter = "\s*---\s*App: [^\n]+\s*Device: \$\{Build\.MANUFACTURER\} \$\{Build\.MODEL\} \(Android \$\{Build\.VERSION\.RELEASE\}\)"',
+                  r'val deviceFooter = "\\n\\n---\\nApp: ሻህ (eth.culturalsports.shah v1.0.0)\\nDevice: ${Build.MANUFACTURER} ${Build.MODEL} (Android ${Build.VERSION.RELEASE})"',
+                  vm
+              )
+              with open(vm_path, "w", encoding="utf-8") as f:
+                  f.write(vm)
+              print("Fixed multiline string literals in ShahViewModel.kt!")
+
+          # 2. Add formatted="false" to all string resources so % symbols pass AAPT2 strictly
           for p in glob.glob("app/src/main/res/values*/strings.xml"):
               with open(p, "r", encoding="utf-8") as f:
                   s = f.read()
@@ -98,11 +113,13 @@ jobs:
               with open(p, "w", encoding="utf-8") as f:
                   f.write(s)
 
-          # 2. Ensure app/build.gradle.kts has release signing fallback & lint disabled for fast release builds
+          # 3. Ensure app/build.gradle.kts preserves dynamic getIdentifier resources & disables lint on release
           bg_path = "app/build.gradle.kts"
           if os.path.exists(bg_path):
               with open(bg_path, "r", encoding="utf-8") as f:
                   bg = f.read()
+              bg = bg.replace("isMinifyEnabled = true", "isMinifyEnabled = false")
+              bg = bg.replace("isShrinkResources = true", "isShrinkResources = false")
               if "checkReleaseBuilds = false" not in bg:
                   bg = bg.replace(
                       "buildFeatures {",
@@ -111,13 +128,35 @@ jobs:
               with open(bg_path, "w", encoding="utf-8") as f:
                   f.write(bg)
 
-          print("Sanitized all strings.xml and app/build.gradle.kts successfully!")
+          # 4. Replace verbose setup manual in README.md with a clean, concise official Federation README
+          clean_readme = """# 🏆 ሻህ (Shah Cultural Sport Game)
+
+          **የኢትዮጵያ ባህል ስፖርቶች ፌዴሬሽን | Ethiopian Cultural Sports Federation**
+
+          * **መተግበሪያ (App Name)**፦ `ሻህ`
+          * **ቋንቋዎች (9 Languages)**፦ አማርኛ፣ English፣ Kiswahili፣ Af-Soomaali፣ Afaan Oromoo፣ ትግርኛ፣ العربية፣ Français፣ Ikinyarwanda/Kirundi
+          * **አድራሻ**፦ 📍 አዲስ አበባ ስታዲየም ከቤተዛታ ሆስፒታል ጎን OBS ህንፃ 4ኛ ፎቅ ቢሮ ቁጥር 406
+          * **Email**፦ `eth.culturalsportsfed.1977@gmail.com`
+          * **Telegram**፦ `@EthiopianculturalsportFDE`
+          * **Facebook**፦ [Ethiopian Cultural Sports Federation](https://www.facebook.com/profile.php?id=61558619311072)
+          """
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write("\n".join(line.lstrip() for line in clean_readme.strip().splitlines()) + "\n")
+
+          print("Sanitized ShahViewModel.kt, strings.xml, app/build.gradle.kts, and README.md!")
           PYEOF
+
+          if [ -d ".git" ]; then
+            git config user.name "github-actions[bot]" || true
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com" || true
+            git add --all ':!.github' || true
+            git commit -m "chore: extract and sanitize Shah Native Kotlin project [skip ci]" || true
+            git push || true
+          fi
 
       - name: 4. Configure Pre-Installed JDK 17, Android SDK & Gradle 8.9 (Zero Deprecation Warnings)
         run: |
           set -e
-          # 1. Configure JDK 17 from Ubuntu 24.04 pre-installed image
           if [ -n "$JAVA_HOME_17_X64" ] && [ -d "$JAVA_HOME_17_X64" ]; then
             echo "JAVA_HOME=$JAVA_HOME_17_X64" >> "$GITHUB_ENV"
             echo "$JAVA_HOME_17_X64/bin" >> "$GITHUB_PATH"
@@ -126,7 +165,6 @@ jobs:
           fi
           java -version
 
-          # 2. Configure Android SDK from Ubuntu 24.04 pre-installed image
           SDK_DIR="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
           echo "ANDROID_HOME=$SDK_DIR" >> "$GITHUB_ENV"
           echo "ANDROID_SDK_ROOT=$SDK_DIR" >> "$GITHUB_ENV"
@@ -134,7 +172,6 @@ jobs:
             yes | "$SDK_DIR/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
           fi
 
-          # 3. Install Gradle 8.9 directly if not already at 8.9
           GRADLE_DIR="/tmp/gradle-8.9"
           if [ ! -d "$GRADLE_DIR" ]; then
             curl -fsSL https://services.gradle.org/distributions/gradle-8.9-bin.zip -o /tmp/gradle-8.9-bin.zip
@@ -149,14 +186,12 @@ jobs:
           FINAL_KEY_PASS="${KEY_PASSWORD:-ethioculturalsports}"
           FINAL_STORE_PASS="${STORE_PASSWORD:-ethioculturalsports}"
 
-          # Java keytool requires passwords to be at least 6 characters
           if [ ${#FINAL_KEY_PASS} -lt 6 ]; then
             FINAL_KEY_PASS="ethioculturalsports"
           fi
           if [ ${#FINAL_STORE_PASS} -lt 6 ]; then
             FINAL_STORE_PASS="ethioculturalsports"
           fi
-          # PKCS12 requires storepass and keypass to match
           FINAL_KEY_PASS="$FINAL_STORE_PASS"
 
           rm -f release.keystore app/release.keystore app/release-key.jks
@@ -200,7 +235,7 @@ jobs:
 
       - name: 6. Build Signed Release Android App Bundle (.aab) & APK (.apk)
         run: |
-          gradle :app:bundleRelease :app:assembleRelease -x lint -x lintVitalRelease --no-daemon --stacktrace
+          gradle :app:bundleRelease :app:assembleRelease -x lint -x lintVitalRelease --no-daemon --console=plain
 
       - name: 7. Collect Signed Release Outputs (.aab & .apk)
         run: |
